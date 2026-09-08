@@ -1,11 +1,11 @@
-export const metadata = {
+import { pageMetadata } from "@/lib/seo-config";
+
+export const metadata = pageMetadata({
   title: "Terms & Conditions",
   description:
     "Review the terms and conditions governing the use of AcadTracker's consultancy management platform.",
-  alternates: {
-    canonical: "/terms-and-conditions",
-  },
-};
+  path: "/terms-and-conditions",
+});
 
 export default function TermsAndConditions() {
   return (
@@ -18,7 +18,7 @@ export default function TermsAndConditions() {
           </h1>
         </div>
 
-        <div className="mt-10 space-y-12 rounded-3xl border border-slate-line bg-white px-6 py-10 shadow-lg shadow-ink/5 sm:px-10 sm:py-12">
+        <div className="mt-10 space-y-10 wrap-break-word rounded-2xl border border-slate-line bg-white px-5 py-8 shadow-lg shadow-ink/5 sm:space-y-12 sm:rounded-3xl sm:px-10 sm:py-12">
 
         <Section title="Effective Date" content={
             <>
@@ -105,7 +105,7 @@ export default function TermsAndConditions() {
 function Section({ title, content }) {
   return (
     <section>
-      <h2 className="text-2xl font-semibold text-ink">
+      <h2 className="text-xl font-semibold text-ink sm:text-2xl">
         {title}
       </h2>
       <div className="mt-1 leading-relaxed text-muted">

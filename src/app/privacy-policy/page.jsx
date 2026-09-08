@@ -1,15 +1,11 @@
-export const metadata = {
+import { pageMetadata } from "@/lib/seo-config";
+
+export const metadata = pageMetadata({
   title: "Privacy Policy",
   description:
     "Read AcadTracker's privacy policy to understand how we collect, use, and protect your consultancy's and students' data.",
-  alternates: {
-    canonical: "/privacy-policy",
-  },
-  robots: {
-    index: true,
-    follow: true,
-  },
-};
+  path: "/privacy-policy",
+});
 
 export default function PrivacyPolicy() {
   return (
@@ -22,7 +18,7 @@ export default function PrivacyPolicy() {
           </h1>
         </div>
 
-        <div className="mt-10 space-y-12 rounded-3xl border border-slate-line bg-white px-6 py-10 shadow-lg shadow-ink/5 sm:px-10 sm:py-12">
+        <div className="mt-10 space-y-10 wrap-break-word rounded-2xl border border-slate-line bg-white px-5 py-8 shadow-lg shadow-ink/5 sm:space-y-12 sm:rounded-3xl sm:px-10 sm:py-12">
 
         <Section
           title="Effective Date"
@@ -272,7 +268,7 @@ export default function PrivacyPolicy() {
               </p>
               <p className="mt-1">
                 Website:{" "}
-                <a href="https://www.acadtracker.com/contact-us" className="text-[#2563EB] underline">
+                <a href="https://www.acadtracker.com/contact-us" className="wrap-anywhere text-[#2563EB] underline">
                   https://www.acadtracker.com/contact-us
                 </a>
               </p>
@@ -288,7 +284,7 @@ export default function PrivacyPolicy() {
 function Section({ title, content }) {
   return (
     <section>
-      <h2 className="mb-1 text-2xl font-semibold text-ink">
+      <h2 className="mb-1 text-xl font-semibold text-ink sm:text-2xl">
         {title}
       </h2>
       <div className="leading-relaxed text-muted">

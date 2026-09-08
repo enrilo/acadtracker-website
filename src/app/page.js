@@ -7,22 +7,14 @@ import {
   CircleCheck,
   Clock,
 } from "lucide-react";
-import { SITE_NAME } from "@/lib/seo-config";
+import { pageMetadata } from "@/lib/seo-config";
 
-export const metadata = {
-  title: `${SITE_NAME} | All-in-One Consultancy Management Software`,
+export const metadata = pageMetadata({
+  title: "All-in-One Consultancy Management Software",
   description:
     "Manage students, visa applications, documents, and follow-ups in one platform built specifically for educational consultancies. Replace spreadsheets and chaos with AcadTracker.",
-  alternates: {
-    canonical: "/",
-  },
-  openGraph: {
-    title: `${SITE_NAME} | All-in-One Consultancy Management Software`,
-    description:
-      "Manage students, visa applications, documents, and follow-ups in one platform built specifically for educational consultancies.",
-    url: "/",
-  },
-};
+  path: "/",
+});
 
 const PROBLEMS = [
   "Missed follow-ups and deadlines",

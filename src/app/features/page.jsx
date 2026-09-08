@@ -7,20 +7,14 @@ import {
   Lock,
 } from "lucide-react";
 
-export const metadata = {
+import { pageMetadata } from "@/lib/seo-config";
+
+export const metadata = pageMetadata({
   title: "Features - Student Management, Visa Tracking & More",
   description:
     "Explore AcadTracker's core features: student management, visa & application tracking, document storage, and smart follow-ups, all built for educational consultancies.",
-  alternates: {
-    canonical: "/features",
-  },
-  openGraph: {
-    title: "AcadTracker Features - Everything Your Consultancy Needs",
-    description:
-      "Student management, visa & application tracking, document storage, and smart follow-ups in one platform.",
-    url: "/features",
-  },
-};
+  path: "/features",
+});
 
 const FEATURES = [
   {

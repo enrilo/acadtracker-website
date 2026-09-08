@@ -26,9 +26,62 @@ export const SITE_KEYWORDS = [
 
 export const TWITTER_HANDLE = "@acadtracker"; // update or remove if you don't have one
 
+// AcadTracker is built and operated by its parent company, TechCraft Infotech.
+// Referenced in structured data (schema.org) and the site footer so search
+// engines and users can connect the product to the company behind it.
+export const PARENT_COMPANY = {
+  name: "TechCraft Infotech LLP",
+  legalName: "TechCraft Infotech LLP",
+  url: "https://techcraftinfotech.com",
+  email: "support@techcraftinfotech.com",
+  logo: `${SITE_URL}/techcraft-infotech-logo.png`,
+  location: {
+    city: "Vadodara",
+    region: "Gujarat",
+    country: "IN",
+  },
+};
+
 export const OG_IMAGE = {
   url: `${SITE_URL}/opengraph-image.png`,
   width: 1920,
   height: 1080,
   alt: `${SITE_NAME} - Consultancy Management Platform`,
 };
+
+// Brand colour used for the mobile browser chrome (theme-color) and PWA.
+export const THEME_COLOR = "#16233f";
+
+/**
+ * Build a consistent Next.js `metadata` object for a page.
+ * Guarantees every page gets a canonical URL, OpenGraph + Twitter tags,
+ * and an absolute OG image, so SEO metadata never drifts page to page.
+ */
+export function pageMetadata({ title, description, path = "/", keywords }) {
+  const url = `${SITE_URL}${path === "/" ? "" : path}`;
+  const fullTitle = title ? `${title} | ${SITE_NAME}` : DEFAULT_TITLE;
+
+  return {
+    title,
+    description,
+    keywords: keywords ?? SITE_KEYWORDS,
+    alternates: { canonical: path },
+    openGraph: {
+      type: "website",
+      url,
+      siteName: SITE_NAME,
+      title: fullTitle,
+      description,
+      images: [OG_IMAGE],
+      locale: "en_US",
+    },
+    twitter: {
+      card: "summary_large_image",
+      site: TWITTER_HANDLE,
+      creator: TWITTER_HANDLE,
+      title: fullTitle,
+      description,
+      images: [OG_IMAGE.url],
+    },
+  };
+}

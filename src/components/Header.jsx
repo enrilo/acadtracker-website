@@ -168,7 +168,7 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-50 w-full border-b border-slate-line shadow-sm shadow-ink/5">
       <div className="bg-white/85 backdrop-blur-md">
-        <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3.5 sm:px-6 sm:py-4 lg:px-8">
+        <div className="mx-auto flex min-h-16 max-w-7xl items-center justify-between px-4 py-3 sm:px-6 sm:py-4 lg:px-8">
           {/* Logo */}
           <Link
             href="/"
@@ -226,11 +226,11 @@ export default function Header() {
           trap this panel inside the ~60px header bar instead of covering
           the full screen. */}
       <div
-        className={`fixed inset-0 top-[64px] z-40 bg-white transition-transform duration-300 ease-out lg:hidden ${
+        className={`fixed inset-x-0 bottom-0 top-16 z-40 overflow-y-auto overscroll-contain bg-white transition-transform duration-300 ease-out lg:hidden ${
           menuOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
-        <nav className="flex flex-col gap-1 px-4 py-6">
+        <nav className="flex flex-col gap-1 px-4 py-6 pb-[calc(1.5rem+env(safe-area-inset-bottom))]">
           {NAV_LINKS.map((link) => {
             const isActive = pathname === link.href;
             return (

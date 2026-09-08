@@ -1,19 +1,12 @@
 import ContactUsClient from "./ContactUsClient";
+import { pageMetadata } from "@/lib/seo-config";
 
-export const metadata = {
+export const metadata = pageMetadata({
   title: "Contact Us - Talk to the AcadTracker Team",
   description:
     "Have questions about AcadTracker's consultancy management software? Reach out to our team for a demo, pricing details, or support for your education consultancy.",
-  alternates: {
-    canonical: "/contact-us",
-  },
-  openGraph: {
-    title: "Contact AcadTracker - Consultancy Management Software",
-    description:
-      "Reach out to our team for a demo, pricing details, or support for your education consultancy.",
-    url: "/contact-us",
-  },
-};
+  path: "/contact-us",
+});
 
 export default function ContactUsPage() {
   return <ContactUsClient />;
