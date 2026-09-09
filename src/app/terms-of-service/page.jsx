@@ -131,6 +131,25 @@ export default function TermsOfService() {
           }
         />
 
+        <Section title="Children’s Data and No Behavioural Tracking"
+          content={
+            <>
+              <p>
+                The Service processes data of students and leads irrespective of
+                age. Where a student is under 18, you, as the Data Fiduciary, are
+                responsible for obtaining verifiable consent from a parent or
+                legal guardian before uploading that student&apos;s data, as
+                required by the Digital Personal Data Protection Act, 2023.
+              </p>
+              <p className="mt-2">
+                We do not use any data, whether of students, leads, or employees,
+                for behavioural tracking, profiling, or targeted advertising,
+                irrespective of age.
+              </p>
+            </>
+          }
+        />
+
         <Section title="User Access and Permissions"
           content={
             <p>

@@ -196,12 +196,21 @@ export default function PrivacyPolicy() {
 
         <Section title="Children’s Personal Data"
           content={
-            <p>
-              The Service may process data of students under 18 years of age
-              only with the consent of a parent or legal guardian. We do not
-              engage in tracking, profiling, or targeted advertising involving
-              children.
-            </p>
+            <>
+              <p>
+                The Service processes data of students and leads irrespective of
+                age, and students do not contract with us directly. Where a
+                student is under 18, the consultancy acting as Data Fiduciary is
+                responsible for obtaining verifiable consent from a parent or
+                legal guardian before uploading that student&apos;s data, as
+                required by the DPDP Act.
+              </p>
+              <p className="mt-2">
+                We do not use any data, whether of students, leads, or employees,
+                for behavioural tracking, profiling, or targeted advertising,
+                irrespective of age.
+              </p>
+            </>
           }
         />
 

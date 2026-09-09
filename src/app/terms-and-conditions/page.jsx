@@ -73,6 +73,19 @@ export default function TermsAndConditions() {
 
         <Section title="Student Data Responsibility" content="You acknowledge that any student data uploaded to AcadTracker is your responsibility. You confirm that you have obtained all necessary permissions and consents from students before storing or processing their information on the platform." />
 
+        <Section title="Children’s Data and No Behavioural Tracking"
+          content={
+            <>
+              <p>
+                AcadTracker processes data of students and leads irrespective of age. Where a student is under 18, you are responsible for obtaining verifiable consent from a parent or legal guardian before uploading that student&apos;s data, as required by the Digital Personal Data Protection Act, 2023.
+              </p>
+              <p className="mt-2">
+                We do not use any data, whether of students, leads, or employees, for behavioural tracking, profiling, or targeted advertising, irrespective of age.
+              </p>
+            </>
+          }
+        />
+
         <Section title="Data Ownership" content="You retain ownership of all data you upload to AcadTracker. By using the platform, you grant AcadTracker a limited license to store, process, and display this data solely for the purpose of providing the services." />
 
         <Section title="Subscription & Payments" content="All features of AcadTracker require a paid subscription. Pricing, billing cycles, and payment terms will be clearly communicated at the time of purchase. Failure to complete payments may result in account suspension or termination." />
