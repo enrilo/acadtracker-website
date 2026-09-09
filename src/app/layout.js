@@ -1,6 +1,7 @@
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import CookieConsent from "@/components/CookieConsent";
 import favicon from "@/assets/images/svg/a-logo-transparent.svg";
 import {
   SITE_URL,
@@ -155,6 +156,7 @@ export default function RootLayout({ children }) {
         </main>
 
         <Footer />
+        <CookieConsent />
       </body>
     </html>
   );
