@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { PARENT_COMPANY } from "@/lib/seo-config";
-import enriloTechLogo from "@/assets/images/company-logo/no-tagline/transparent-bg/enrilo-tech-logo-1200x320-cropped.png";
+import enriloTechLogo from "@/assets/images/company-logo/no-tagline/transparent-bg/enrilo-technologies-logo-1320x320-cropped.png";
 
 const COLUMNS = [
   {

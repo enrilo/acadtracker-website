@@ -26,14 +26,14 @@ export const SITE_KEYWORDS = [
 
 export const TWITTER_HANDLE = "@acadtracker"; // update or remove if you don't have one
 
-// AcadTracker is built and operated by its parent company, Enrilo Tech.
+// AcadTracker is built and operated by its parent company, Enrilo Technologies.
 // Referenced in structured data (schema.org) and the site footer so search
 // engines and users can connect the product to the company behind it.
 export const PARENT_COMPANY = {
-  name: "Enrilo Tech",
-  legalName: "Enrilo Tech LLP",
-  url: "https://enrilotech.com",
-  email: "support@enrilotech.com",
+  name: "Enrilo Technologies",
+  legalName: "Enrilo Technologies LLP",
+  url: "https://enrilotechnologies.com",
+  email: "support@enrilotechnologies.com",
   logo: `${SITE_URL}/enrilo-tech-logo.png`,
   location: {
     city: "Vadodara",
