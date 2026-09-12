@@ -26,14 +26,15 @@ export const SITE_KEYWORDS = [
 
 export const TWITTER_HANDLE = "@acadtracker"; // update or remove if you don't have one
 
-// AcadTracker is built and operated by its parent company, TechCraft Infotech.
+// AcadTracker is built and operated by its parent company, Enrilo Tech.
 // Referenced in structured data (schema.org) and the site footer so search
 // engines and users can connect the product to the company behind it.
 export const PARENT_COMPANY = {
-  name: "TechCraft Infotech LLP",
-  legalName: "TechCraft Infotech LLP",
-  url: "https://techcraftinfotech.com",
-  email: "support@techcraftinfotech.com",
+  name: "Enrilo Tech",
+  legalName: "Enrilo Tech LLP",
+  url: "https://enrilotech.com",
+  email: "support@enrilotech.com",
+  // TODO: swap in the Enrilo Tech logo asset when it's ready.
   logo: `${SITE_URL}/techcraft-infotech-logo.png`,
   location: {
     city: "Vadodara",

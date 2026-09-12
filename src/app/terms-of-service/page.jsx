@@ -40,7 +40,7 @@ export default function TermsOfService() {
             <>
               <p>
                 These Terms of Service (“Terms”) govern access to and use of the
-                AcadTracker platform (“Service”) operated by TechCraft Infotech
+                AcadTracker platform (“Service”) operated by Enrilo Tech
                 LLP (“Company”, “we”, “us”, or “our”).
               </p>
               <p className="mt-2">
@@ -176,7 +176,7 @@ export default function TermsOfService() {
             <>
               <p>
                 The Service, including all software, designs, logos, and
-                content, is the intellectual property of TechCraft Infotech LLP.
+                content, is the intellectual property of Enrilo Tech LLP.
               </p>
               <p className="mt-2">
                 You are granted a limited, non-exclusive, non-transferable
@@ -214,7 +214,7 @@ export default function TermsOfService() {
         <Section title="Limitation of Liability"
           content={
             <p>
-              To the maximum extent permitted by law, TechCraft Infotech LLP
+              To the maximum extent permitted by law, Enrilo Tech LLP
               shall not be liable for indirect, incidental, or consequential damages,
               including loss of data or business opportunities.
             </p>
@@ -224,7 +224,7 @@ export default function TermsOfService() {
         <Section title="Indemnification"
           content={
             <p>
-              You agree to indemnify and hold harmless TechCraft Infotech LLP from claims,
+              You agree to indemnify and hold harmless Enrilo Tech LLP from claims,
               damages, or liabilities arising from your use of the Service or
               violation of these Terms.
             </p>
@@ -258,7 +258,7 @@ export default function TermsOfService() {
               </p>
               <p className="mt-2">
                 Email:{" "}
-                <span className="text-[#2563EB]">support@techcraftinfotech.com</span>
+                <span className="text-[#2563EB]">support@enrilotech.com</span>
               </p>
               <p className="mt-1">
                 Website:{" "}

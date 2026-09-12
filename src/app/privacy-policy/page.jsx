@@ -41,7 +41,7 @@ export default function PrivacyPolicy() {
           content={
             <>
               <p>
-                This Privacy Policy describes how TechCraft Infotech LLP
+                This Privacy Policy describes how Enrilo Tech LLP
                 (“Company”, “we”, “us”, or “our”), the operator of the
                 AcadTracker platform, collects, uses, stores, and protects
                 Personal Data when you use our platform and services (“Service”).
@@ -70,7 +70,7 @@ export default function PrivacyPolicy() {
               <h3 className="font-semibold mt-4">Definitions</h3>
               <ul className="list-disc pl-6 mt-2 space-y-1">
                 <li>
-                  <strong>Company:</strong> TechCraft Infotech LLP, Vadodara,
+                  <strong>Company:</strong> Enrilo Tech LLP, Vadodara,
                   Gujarat, India, the operator of AcadTracker.
                 </li>
                 <li>
@@ -85,7 +85,7 @@ export default function PrivacyPolicy() {
                   that determines the purpose and means of processing data.
                 </li>
                 <li>
-                  <strong>Data Processor:</strong> TechCraft Infotech LLP, which
+                  <strong>Data Processor:</strong> Enrilo Tech LLP, which
                   processes Personal Data on behalf of Data Fiduciaries.
                 </li>
                 <li>
@@ -249,9 +249,9 @@ export default function PrivacyPolicy() {
                 In accordance with the DPDP Act, grievances may be addressed to:
               </p>
               <p className="mt-2 font-medium">
-                Grievance Officer – TechCraft Infotech LLP (AcadTracker)
+                Grievance Officer – Enrilo Tech LLP (AcadTracker)
               </p>
-              <p>Email: <span className="text-[#2563EB]">support@techcraftinfotech.com</span></p>
+              <p>Email: <span className="text-[#2563EB]">support@enrilotech.com</span></p>
               <p className="mt-1">
                 We aim to resolve grievances within a reasonable timeframe.
               </p>
@@ -273,7 +273,7 @@ export default function PrivacyPolicy() {
             <>
               <p>If you have questions regarding this Privacy Policy:</p>
               <p className="mt-2">
-                Email: <span className="text-[#2563EB]">support@techcraftinfotech.com</span>
+                Email: <span className="text-[#2563EB]">support@enrilotech.com</span>
               </p>
               <p className="mt-1">
                 Website:{" "}

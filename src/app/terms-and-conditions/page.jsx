@@ -32,7 +32,7 @@ export default function TermsAndConditions() {
         <Section title="Introduction" content={
           <>
             <p>
-              These Terms and Conditions (&apos;Terms&apos;) govern your use of the AcadTracker platform, which is operated by TechCraft Infotech LLP (&apos;Company&apos;, &apos;we&apos;, &apos;us&apos;, or &apos;our&apos;). By accessing or using AcadTracker, you agree to be bound by these Terms, our Privacy Policy, and our Data Processing Agreement (DPA). If you do not agree, you must not use the platform.
+              These Terms and Conditions (&apos;Terms&apos;) govern your use of the AcadTracker platform, which is operated by Enrilo Tech LLP (&apos;Company&apos;, &apos;we&apos;, &apos;us&apos;, or &apos;our&apos;). By accessing or using AcadTracker, you agree to be bound by these Terms, our Privacy Policy, and our Data Processing Agreement (DPA). If you do not agree, you must not use the platform.
             </p>
             <p className="mt-2">
               AcadTracker is intended for use by educational consultancies and authorized representatives. Students and individuals whose data is processed do not directly contract with us.
@@ -94,9 +94,9 @@ export default function TermsAndConditions() {
 
         <Section title="Termination" content="We reserve the right to suspend or terminate your account if you violate these Terms or misuse the platform. You may also terminate your account at any time, subject to applicable data retention policies." />
 
-        <Section title="Limitation of Liability" content="To the maximum extent permitted by law, TechCraft Infotech LLP shall not be liable for any indirect, incidental, or consequential damages arising from your use of the platform." />
+        <Section title="Limitation of Liability" content="To the maximum extent permitted by law, Enrilo Tech LLP shall not be liable for any indirect, incidental, or consequential damages arising from your use of the platform." />
 
-        <Section title="Indemnification" content="You agree to indemnify and hold TechCraft Infotech LLP harmless from any claims, damages, or liabilities arising from your use of the platform, including violations of these Terms or applicable laws." />
+        <Section title="Indemnification" content="You agree to indemnify and hold Enrilo Tech LLP harmless from any claims, damages, or liabilities arising from your use of the platform, including violations of these Terms or applicable laws." />
 
         <Section title="Changes to These Terms" content="We may update these Terms from time to time. Continued use of AcadTracker after changes are posted constitutes acceptance of the revised Terms." />
 
@@ -105,7 +105,7 @@ export default function TermsAndConditions() {
         <Section title="Contact Information"
           content={
             <>
-              <p>If you have questions about these Terms, please contact us at: <span className='font-medium text-[#2563EB]'>support@techcraftinfotech.com</span></p>
+              <p>If you have questions about these Terms, please contact us at: <span className='font-medium text-[#2563EB]'>support@enrilotech.com</span></p>
             </>
           }
         />
