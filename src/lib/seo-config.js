@@ -34,8 +34,7 @@ export const PARENT_COMPANY = {
   legalName: "Enrilo Tech LLP",
   url: "https://enrilotech.com",
   email: "support@enrilotech.com",
-  // TODO: swap in the Enrilo Tech logo asset when it's ready.
-  logo: `${SITE_URL}/techcraft-infotech-logo.png`,
+  logo: `${SITE_URL}/enrilo-tech-logo.png`,
   location: {
     city: "Vadodara",
     region: "Gujarat",

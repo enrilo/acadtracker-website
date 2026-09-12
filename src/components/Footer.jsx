@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { PARENT_COMPANY } from "@/lib/seo-config";
-import techcraftLogo from "@/assets/images/company-logo/techcraft-infotech-logo-trimmed.png";
+import enriloTechLogo from "@/assets/images/company-logo/no-tagline/transparent-bg/enrilo-tech-logo-1200x320-cropped.png";
 
 const COLUMNS = [
   {
@@ -43,10 +43,8 @@ export default function Footer() {
               </p>
               <a href={PARENT_COMPANY.url} target="_blank" rel="noopener noreferrer" className="mt-2 inline-flex rounded-lg bg-white px-3 py-2 transition hover:opacity-90">
                 <Image
-                  src={techcraftLogo}
+                  src={enriloTechLogo}
                   alt={`${PARENT_COMPANY.name} logo`}
-                  width={450}
-                  height={140}
                   className="h-10 w-auto"
                 />
               </a>
