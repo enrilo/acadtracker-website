@@ -2,16 +2,28 @@
 import { useMemo } from "react";
 import { useForm } from "@formspree/react";
 import { useState, useEffect } from "react";
+import { useSearchParams } from "next/navigation";
 import Select from "react-select";
 import { TextField } from "@mui/material";
 import { countryCodes } from "../components/countryCodeList.js";
 
+const PLAN_INTRO = {
+  enterprise:
+    "I'm interested in the Enterprise plan and would like to discuss pricing and requirements for my team.\n\n",
+  regular:
+    "I'm interested in getting started with the Regular plan.\n\n",
+};
+
 export default function ContactUsClient() {
   const [state, handleSubmit] = useForm("mredebve");
+  const searchParams = useSearchParams();
+  const plan = searchParams.get("plan");
+  const subject = plan === "enterprise" ? "Enterprise Plan Inquiry" : plan === "regular" ? "Regular Plan Inquiry" : "";
+
   // Form states
   const [full_name, setFullName] = useState("");
   const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
+  const [message, setMessage] = useState(PLAN_INTRO[plan] || "");
   const [phone, setPhone] = useState("");
   const [countryCodeWithName, setCountryCodeWithName] = useState(null);
   const [menuPortalTarget, setMenuPortalTarget] = useState(null);
@@ -61,14 +73,19 @@ export default function ContactUsClient() {
             <div className="mb-6 text-center">
               <p className="stamp-blue mx-auto">Get in touch</p>
               <h1 className="mt-4 font-display text-2xl font-semibold text-ink sm:text-3xl">
-                Contact Us
+                {subject || "Contact Us"}
               </h1>
               <p className="mt-2 text-sm text-muted sm:text-base">
-                We would love to hear from you. Fill out the form below.
+                {plan === "enterprise"
+                  ? "Tell us about your team and we'll get back to you with a custom quote."
+                  : "We would love to hear from you. Fill out the form below."}
               </p>
             </div>
 
             <form onSubmit={handleSubmit} className="space-y-5">
+              {subject && (
+                <input type="hidden" name="_subject" value={subject} />
+              )}
               <div>
                 {/* Full Name */}
                 <TextField name="full_name" id="full_name" label="Please Enter Your Full Name" variant="outlined" fullWidth required value={full_name} onChange={(e) => setFullName(e.target.value)} sx={{ marginBottom: "1.25rem", minHeight: "56px", "& .MuiFormLabel-asterisk": { color: "red" }, }} />

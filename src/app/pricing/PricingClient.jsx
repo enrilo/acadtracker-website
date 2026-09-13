@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import Link from "next/link";
 import { Check } from "lucide-react";
 
 export default function PricingClient() {
@@ -94,9 +95,12 @@ export default function PricingClient() {
             </ul>
 
             {/* CTA */}
-            <button className="mt-auto w-full cursor-pointer rounded-lg bg-blue py-3 font-semibold text-white transition hover:bg-blue-dark">
+            <Link
+              href="/contact-us?plan=regular"
+              className="mt-auto block w-full cursor-pointer rounded-lg bg-blue py-3 text-center font-semibold text-white transition hover:bg-blue-dark"
+            >
               Get Started
-            </button>
+            </Link>
           </div>
 
           {/* Enterprise Plan */}
@@ -134,9 +138,12 @@ export default function PricingClient() {
             </ul>
 
             {/* CTA */}
-            <button className="mt-auto w-full cursor-pointer rounded-lg bg-ink py-3 font-semibold text-white transition hover:bg-slate">
+            <Link
+              href="/contact-us?plan=enterprise"
+              className="mt-auto block w-full cursor-pointer rounded-lg bg-ink py-3 text-center font-semibold text-white transition hover:bg-slate"
+            >
               Contact Sales
-            </button>
+            </Link>
           </div>
         </div>
 

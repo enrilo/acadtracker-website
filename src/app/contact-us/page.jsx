@@ -1,3 +1,4 @@
+import { Suspense } from "react";
 import ContactUsClient from "./ContactUsClient";
 import { pageMetadata } from "@/lib/seo-config";
 
@@ -9,5 +10,9 @@ export const metadata = pageMetadata({
 });
 
 export default function ContactUsPage() {
-  return <ContactUsClient />;
+  return (
+    <Suspense fallback={null}>
+      <ContactUsClient />
+    </Suspense>
+  );
 }
