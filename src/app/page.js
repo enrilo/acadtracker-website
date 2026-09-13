@@ -10,7 +10,7 @@ import {
 import { pageMetadata } from "@/lib/seo-config";
 
 export const metadata = pageMetadata({
-  title: "All-in-One Consultancy Management Software",
+  title: "AcadTracker | All-in-One Consultancy Management Software",
   description:
     "Manage students, visa applications, documents, and follow-ups in one platform built specifically for educational consultancies. Replace spreadsheets and chaos with AcadTracker.",
   path: "/",
