@@ -275,18 +275,12 @@ export default function Home() {
             operations.
           </p>
           <div className="mt-10 flex flex-col justify-center gap-3 sm:flex-row">
-            <Link
-              href="/contact-us"
-              className="rounded-lg bg-white px-7 py-3.5 text-center font-semibold text-ink transition hover:bg-slate-100"
-            >
+            <Link href="/contact-us" className="rounded-lg bg-white px-7 py-3.5 text-center font-semibold text-ink transition hover:bg-slate-100">
               Book a Free Demo
             </Link>
-            <Link
-              href="/pricing"
-              className="rounded-lg border border-white/30 px-7 py-3.5 text-center font-semibold text-white transition hover:bg-white/10"
-            >
+            {/* <Link href="/pricing" className="rounded-lg border border-white/30 px-7 py-3.5 text-center font-semibold text-white transition hover:bg-white/10">
               Start Free Trial
-            </Link>
+            </Link> */}
           </div>
         </div>
       </section>
