@@ -12,6 +12,7 @@ import {
   TWITTER_HANDLE,
   OG_IMAGE,
   PARENT_COMPANY,
+  LINKEDIN,
   THEME_COLOR,
 } from "@/lib/seo-config";
 
@@ -89,6 +90,7 @@ const parentOrganizationJsonLd = {
   url: PARENT_COMPANY.url,
   logo: PARENT_COMPANY.logo,
   email: PARENT_COMPANY.email,
+  ...(LINKEDIN.company && { sameAs: [LINKEDIN.company] }),
   address: {
     "@type": "PostalAddress",
     addressLocality: PARENT_COMPANY.location.city,
@@ -105,6 +107,7 @@ const brandOrganizationJsonLd = {
   url: SITE_URL,
   logo: OG_IMAGE.url,
   description: DEFAULT_DESCRIPTION,
+  ...(LINKEDIN.product && { sameAs: [LINKEDIN.product] }),
   parentOrganization: { "@id": `${PARENT_COMPANY.url}/#organization` },
 };
 

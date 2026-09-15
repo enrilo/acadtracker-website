@@ -5,7 +5,9 @@ import { useState, useEffect } from "react";
 import { useSearchParams } from "next/navigation";
 import Select from "react-select";
 import { TextField } from "@mui/material";
+import LinkedinIcon from "@/components/icons/LinkedinIcon";
 import { countryCodes } from "../components/countryCodeList.js";
+import { LINKEDIN } from "@/lib/seo-config";
 
 const PLAN_INTRO = {
   enterprise:
@@ -52,6 +54,18 @@ export default function ContactUsClient() {
       value: c.code,
       label: `${c.code} - ${c.name}`
     })),
+    []
+  );
+
+  const linkedInLinks = useMemo(
+    () =>
+      [
+        LINKEDIN.company && { label: "Enrilo Technologies", url: LINKEDIN.company },
+        LINKEDIN.product && { label: "AcadTracker", url: LINKEDIN.product },
+        ...LINKEDIN.founders
+          .filter((f) => f.url)
+          .map((f) => ({ label: f.name, url: f.url })),
+      ].filter(Boolean),
     []
   );
 
@@ -133,6 +147,25 @@ export default function ContactUsClient() {
                 {state.submitting ? "Sending..." : "Send Message"}
               </button>
             </form>
+
+            {linkedInLinks.length > 0 && (
+              <div className="mt-6 flex flex-wrap items-center justify-center gap-4 border-t border-slate-100 pt-6">
+                <span className="text-sm text-muted">Connect with us:</span>
+                {linkedInLinks.map((link) => (
+                  <a
+                    key={link.url}
+                    href={link.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={`${link.label} on LinkedIn`}
+                    className="inline-flex items-center gap-1.5 text-sm text-muted transition-colors hover:text-ink"
+                  >
+                    <LinkedinIcon className="h-4 w-4" />
+                    {link.label}
+                  </a>
+                ))}
+              </div>
+            )}
           </div>
         )}
       </div>

@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
-import { PARENT_COMPANY } from "@/lib/seo-config";
+import LinkedinIcon from "@/components/icons/LinkedinIcon";
+import { PARENT_COMPANY, LINKEDIN } from "@/lib/seo-config";
 import enriloTechLogo from "@/assets/images/company-logo/no-tagline/transparent-bg/enrilo-technologies-logo-1320x320-cropped.png";
 
 const COLUMNS = [
@@ -49,6 +50,18 @@ export default function Footer() {
                 />
               </a>
             </div>
+
+            {LINKEDIN.company && (
+              <a
+                href={LINKEDIN.company}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={`${PARENT_COMPANY.name} on LinkedIn`}
+                className="mt-4 inline-flex text-slate-400 transition-colors hover:text-white"
+              >
+                <LinkedinIcon className="h-5 w-5" />
+              </a>
+            )}
           </div>
 
           {COLUMNS.map((col) => (

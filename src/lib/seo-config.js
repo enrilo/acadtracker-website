@@ -32,7 +32,7 @@ export const TWITTER_HANDLE = "@acadtracker"; // update or remove if you don't h
 export const PARENT_COMPANY = {
   name: "Enrilo Technologies",
   legalName: "Enrilo Technologies LLP",
-  url: "https://enrilotechnologies.com",
+  url: "https://www.enrilotechnologies.com",
   email: "support@enrilotechnologies.com",
   logo: `${SITE_URL}/enrilo-tech-logo.png`,
   location: {
@@ -40,6 +40,17 @@ export const PARENT_COMPANY = {
     region: "Gujarat",
     country: "IN",
   },
+};
+
+// LinkedIn presence. Fill in the real URLs; leave a value as "" to omit
+// that link from the UI (e.g. the product page is still pending approval).
+export const LINKEDIN = {
+  company: "https://www.linkedin.com/company/enrilo-technologies",
+  product: "", // AcadTracker LinkedIn product page (pending approval)
+  founders: [
+    { name: "Aunsh Patel", url: "https://www.linkedin.com/in/aunsh-patel/" },
+    { name: "Shoaib Shaikh", url: "https://www.linkedin.com/in/shoaib98/" },
+  ],
 };
 
 export const OG_IMAGE = {
