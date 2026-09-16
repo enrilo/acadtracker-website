@@ -1,12 +1,5 @@
 import Link from "next/link";
-import {
-  FileCheck2,
-  Bell,
-  FolderClock,
-  ListChecks,
-  CircleCheck,
-  Clock,
-} from "lucide-react";
+import { FileCheck2, Bell, FolderClock, ListChecks, CircleCheck, Clock } from "lucide-react";
 import { pageMetadata } from "@/lib/seo-config";
 
 export const metadata = pageMetadata({
@@ -27,26 +20,19 @@ const FEATURES = [
   {
     icon: ListChecks,
     title: "Student Management",
-    description:
-      "Personal details, academic history, visa status, and counseling notes, all in one unified profile.",
-  },
-  {
+    description: "Personal details, academic history, visa status, and counseling notes, all in one unified profile.",
+  }, {
     icon: Bell,
     title: "Smart Follow-Ups",
-    description:
-      "Automatically maintain follow up lists so your team never misses a call or reminder.",
-  },
-  {
+    description: "Automatically maintain follow up lists so your team never misses a call or reminder.",
+  }, {
     icon: FolderClock,
     title: "Document Storage",
-    description:
-      "Store transcripts, offer letters, payments, and visa documents with clear received/pending status.",
-  },
-  {
+    description: "Store transcripts, offer letters, payments, and visa documents with clear received/pending status.",
+  }, {
     icon: FileCheck2,
     title: "Application Tracking",
-    description:
-      "Track universities applied to and see outcomes instantly, whether it is accepted, rejected, or pending.",
+    description: "Track universities applied to and see outcomes instantly, whether it is accepted, rejected, or pending.",
   },
 ];
 
@@ -84,16 +70,10 @@ export default function Home() {
               for educational consultancies.
             </p>
             <div className="mt-9 flex flex-col justify-center gap-3 sm:flex-row lg:justify-start">
-              <Link
-                href="/contact-us"
-                className="rounded-lg bg-blue px-7 py-3.5 text-center font-semibold text-white shadow-lg shadow-blue/30 transition hover:bg-blue-dark"
-              >
+              <Link href="/contact-us" className="rounded-lg bg-blue px-7 py-3.5 text-center font-semibold text-white shadow-lg shadow-blue/30 transition hover:bg-blue-dark">
                 Book a Free Demo
               </Link>
-              <Link
-                href="/pricing"
-                className="rounded-lg border border-white/25 bg-white/5 px-7 py-3.5 text-center font-semibold text-white transition hover:bg-white/10"
-              >
+              <Link href="/pricing" className="rounded-lg border border-white/25 bg-white/5 px-7 py-3.5 text-center font-semibold text-white transition hover:bg-white/10">
                 See Pricing
               </Link>
             </div>
@@ -108,7 +88,7 @@ export default function Home() {
                     Student File · #EN-4821
                   </p>
                   <p className="mt-1 font-display text-lg font-semibold text-ink">
-                    Ananya Sharma
+                    Krishna Yadav
                   </p>
                 </div>
                 <span className="stamp-green">Accepted</span>
@@ -120,10 +100,7 @@ export default function Home() {
                   { label: "Visa application filed", done: true },
                   { label: "Tuition deposit paid", done: false },
                 ].map((row) => (
-                  <li
-                    key={row.label}
-                    className="flex items-center gap-3 text-sm text-ink"
-                  >
+                  <li key={row.label} className="flex items-center gap-3 text-sm text-ink">
                     {row.done ? (
                       <CircleCheck size={18} className="shrink-0 text-status-green" />
                     ) : (
@@ -164,10 +141,7 @@ export default function Home() {
 
           <div className="mt-10 grid gap-4 text-left sm:grid-cols-2">
             {PROBLEMS.map((item) => (
-              <div
-                key={item}
-                className="card-lift rounded-xl border border-slate-line bg-white p-5"
-              >
+              <div key={item} className="card-lift rounded-xl border border-slate-line bg-white p-5">
                 <p className="font-medium text-ink">{item}</p>
               </div>
             ))}
@@ -192,10 +166,7 @@ export default function Home() {
 
           <div className="mt-12 grid gap-6 sm:grid-cols-2">
             {FEATURES.map(({ icon: Icon, title, description }) => (
-              <div
-                key={title}
-                className="card-lift rounded-xl border border-slate-line bg-white p-6"
-              >
+              <div key={title} className="card-lift rounded-xl border border-slate-line bg-white p-6">
                 <div className="flex h-11 w-11 items-center justify-center rounded-lg bg-blue-light">
                   <Icon size={22} className="text-blue" />
                 </div>
@@ -226,10 +197,7 @@ export default function Home() {
 
           <div className="mt-10 grid gap-4 text-left sm:grid-cols-3">
             {DIFFERENTIATORS.map((item) => (
-              <div
-                key={item}
-                className="card-lift rounded-xl border border-slate-line bg-white p-5"
-              >
+              <div key={item} className="card-lift rounded-xl border border-slate-line bg-white p-5">
                 <p className="text-ink">{item}</p>
               </div>
             ))}
@@ -250,10 +218,7 @@ export default function Home() {
 
           <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-5">
             {STEPS.map((step, index) => (
-              <div
-                key={step}
-                className="card-lift rounded-xl border border-slate-line bg-white p-6 text-center"
-              >
+              <div key={step} className="card-lift rounded-xl border border-slate-line bg-white p-6 text-center">
                 <div className="mx-auto font-mono text-2xl font-bold text-blue">
                   {String(index + 1).padStart(2, "0")}
                 </div>
