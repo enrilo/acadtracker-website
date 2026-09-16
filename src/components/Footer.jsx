@@ -35,11 +35,11 @@ export default function Footer() {
             <span className="font-display text-xl font-semibold text-white">
               AcadTracker
             </span>
-            <p className="mt-3 max-w-xs text-sm text-slate-400">
+            <p className="mt-1 max-w-xs text-sm text-white">
               Consultancy management software for educational consultancies.
             </p>
             <div className="mt-4">
-              <p className="text-xs uppercase tracking-wider text-slate-500">
+              <p className="text-xs uppercase tracking-wider text-whte">
                 A product by
               </p>
               <a href={PARENT_COMPANY.url} target="_blank" rel="noopener noreferrer" className="mt-2 inline-flex rounded-lg bg-white px-3 py-2 transition hover:opacity-90">
@@ -51,17 +51,17 @@ export default function Footer() {
               </a>
             </div>
 
-            {LINKEDIN.company && (
-              <a
-                href={LINKEDIN.company}
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label={`${PARENT_COMPANY.name} on LinkedIn`}
-                className="mt-4 inline-flex text-slate-400 transition-colors hover:text-white"
-              >
+            <div className="mt-4 flex flex-row items-center">
+              <p className="text-xs uppercase tracking-wider text-white">
+                Follow us on:
+              </p>
+              &nbsp;&nbsp;&nbsp;
+              {LINKEDIN.company && (
+              <a href={LINKEDIN.company} target="_blank" rel="noopener noreferrer" aria-label={`${PARENT_COMPANY.name} on LinkedIn`} className="text-slate-400 transition-colors hover:text-white">
                 <LinkedinIcon className="h-5 w-5" />
               </a>
             )}
+            </div>
           </div>
 
           {COLUMNS.map((col) => (
