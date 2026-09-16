@@ -10,10 +10,8 @@ import { countryCodes } from "../components/countryCodeList.js";
 import { LINKEDIN } from "@/lib/seo-config";
 
 const PLAN_INTRO = {
-  enterprise:
-    "I'm interested in the Enterprise plan and would like to discuss pricing and requirements for my team.\n\n",
-  regular:
-    "I'm interested in getting started with the Regular plan.\n\n",
+  enterprise: "I'm interested in the Enterprise plan and would like to discuss pricing and requirements for my team.\n\n",
+  regular: "I'm interested in getting started with the Regular plan.\n\n",
 };
 
 export default function ContactUsClient() {
@@ -58,8 +56,7 @@ export default function ContactUsClient() {
   );
 
   const linkedInLinks = useMemo(
-    () =>
-      [
+    () => [
         LINKEDIN.company && { label: "Enrilo Technologies", url: LINKEDIN.company },
         LINKEDIN.product && { label: "AcadTracker", url: LINKEDIN.product },
         ...LINKEDIN.founders
@@ -90,9 +87,10 @@ export default function ContactUsClient() {
                 {subject || "Contact Us"}
               </h1>
               <p className="mt-2 text-sm text-muted sm:text-base">
-                {plan === "enterprise"
-                  ? "Tell us about your team and we'll get back to you with a custom quote."
-                  : "We would love to hear from you. Fill out the form below."}
+                {
+                  plan === "enterprise" ? "Tell us about your team and we'll get back to you with a custom quote."
+                  : "We would love to hear from you. Fill out the form below."
+                }
               </p>
             </div>
 
@@ -152,14 +150,7 @@ export default function ContactUsClient() {
               <div className="mt-6 flex flex-wrap items-center justify-center gap-4 border-t border-slate-100 pt-6">
                 <span className="text-sm text-muted">Connect with us:</span>
                 {linkedInLinks.map((link) => (
-                  <a
-                    key={link.url}
-                    href={link.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label={`${link.label} on LinkedIn`}
-                    className="inline-flex items-center gap-1.5 text-sm text-muted transition-colors hover:text-ink"
-                  >
+                  <a key={link.url} href={link.url} target="_blank" rel="noopener noreferrer" aria-label={`${link.label} on LinkedIn`} className="inline-flex items-center gap-1.5 text-sm text-muted transition-colors hover:text-ink">
                     <LinkedinIcon className="h-4 w-4" />
                     {link.label}
                   </a>
