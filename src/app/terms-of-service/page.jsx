@@ -2,8 +2,7 @@ import { pageMetadata } from "@/lib/seo-config";
 
 export const metadata = pageMetadata({
   title: "Terms of Service",
-  description:
-    "Read the terms of service for using AcadTracker's consultancy management software.",
+  description: "Read the terms of service for using AcadTracker's consultancy management software.",
   path: "/terms-of-service",
 });
 

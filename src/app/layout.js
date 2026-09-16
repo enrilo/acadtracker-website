@@ -3,18 +3,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import CookieConsent from "@/components/CookieConsent";
 import favicon from "@/assets/images/svg/a-logo-transparent.svg";
-import {
-  SITE_URL,
-  SITE_NAME,
-  DEFAULT_TITLE,
-  DEFAULT_DESCRIPTION,
-  SITE_KEYWORDS,
-  TWITTER_HANDLE,
-  OG_IMAGE,
-  PARENT_COMPANY,
-  LINKEDIN,
-  THEME_COLOR,
-} from "@/lib/seo-config";
+import { SITE_URL, SITE_NAME, DEFAULT_TITLE, DEFAULT_DESCRIPTION, SITE_KEYWORDS, TWITTER_HANDLE, OG_IMAGE, PARENT_COMPANY, LINKEDIN, THEME_COLOR } from "@/lib/seo-config";
 
 export const viewport = {
   themeColor: THEME_COLOR,

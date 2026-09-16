@@ -22,8 +22,7 @@ export default function PricingClient() {
         {/* Billing Toggle */}
         <div className="mt-10 flex justify-center">
           <div className="flex rounded-full bg-slate-line/60 p-1">
-            <button
-              onClick={() => setBilling("monthly")}
+            <button onClick={() => setBilling("monthly")}
               className={`cursor-pointer rounded-full px-5 py-2 text-sm font-semibold transition sm:px-6 ${
                 billing === "monthly"
                   ? "bg-white text-ink shadow"
@@ -32,14 +31,7 @@ export default function PricingClient() {
             >
               Monthly
             </button>
-            <button
-              onClick={() => setBilling("annual")}
-              className={`cursor-pointer rounded-full px-5 py-2 text-sm font-semibold transition sm:px-6 ${
-                billing === "annual"
-                  ? "bg-white text-ink shadow"
-                  : "text-muted"
-              }`}
-            >
+            <button onClick={() => setBilling("annual")} className={`cursor-pointer rounded-full px-5 py-2 text-sm font-semibold transition sm:px-6 ${ billing === "annual" ? "bg-white text-ink shadow" : "text-muted" }`}>
               Annual
             </button>
           </div>
@@ -95,10 +87,7 @@ export default function PricingClient() {
             </ul>
 
             {/* CTA */}
-            <Link
-              href="/contact-us?plan=regular"
-              className="mt-auto block w-full cursor-pointer rounded-lg bg-blue py-3 text-center font-semibold text-white transition hover:bg-blue-dark"
-            >
+            <Link href="/contact-us?plan=regular" className="mt-auto block w-full cursor-pointer rounded-lg bg-blue py-3 text-center font-semibold text-white transition hover:bg-blue-dark">
               Get Started
             </Link>
           </div>
@@ -138,10 +127,7 @@ export default function PricingClient() {
             </ul>
 
             {/* CTA */}
-            <Link
-              href="/contact-us?plan=enterprise"
-              className="mt-auto block w-full cursor-pointer rounded-lg bg-ink py-3 text-center font-semibold text-white transition hover:bg-slate"
-            >
+            <Link href="/contact-us?plan=enterprise" className="mt-auto block w-full cursor-pointer rounded-lg bg-ink py-3 text-center font-semibold text-white transition hover:bg-slate">
               Contact Sales
             </Link>
           </div>
