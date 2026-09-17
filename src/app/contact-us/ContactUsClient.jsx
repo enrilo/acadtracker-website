@@ -89,7 +89,7 @@ export default function ContactUsClient() {
               <p className="mt-2 text-sm text-muted sm:text-base">
                 {
                   plan === "enterprise" ? "Tell us about your team and we'll get back to you with a custom quote."
-                  : "We would love to hear from you. Fill out the form below."
+                  : "Questions, a demo, or just curious? Tell us a bit about your consultancy and we'll take it from there."
                 }
               </p>
             </div>

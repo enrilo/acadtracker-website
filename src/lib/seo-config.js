@@ -8,7 +8,7 @@ export const SITE_NAME = "AcadTracker";
 export const DEFAULT_TITLE =
   "AcadTracker - Consultancy Management Software for Education Consultants";
 export const DEFAULT_DESCRIPTION =
-  "AcadTracker is an all-in-one consultancy management platform for educational consultancies. Manage students, track visa applications, monitor documents, and streamline follow-ups in one place.";
+  "AcadTracker is the all-in-one platform for educational consultancies. Track students, visa applications, documents, and follow-ups in one place, and stop running your consultancy out of spreadsheets.";
 
 // Primary keyword targets. These aren't a ranking factor on their own,
 // but they document the terms every page's title/description/H1s should

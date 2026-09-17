@@ -36,7 +36,8 @@ export default function Footer() {
               AcadTracker
             </span>
             <p className="mt-1 max-w-xs text-sm text-white">
-              Consultancy management software for educational consultancies.
+              The system of record for educational consultancies, from first
+              inquiry to offer letter.
             </p>
             <div className="mt-4">
               <p className="text-xs uppercase tracking-wider text-whte">

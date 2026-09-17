@@ -3,43 +3,43 @@ import { FileCheck2, Bell, FolderClock, ListChecks, CircleCheck, Clock } from "l
 import { pageMetadata } from "@/lib/seo-config";
 
 export const metadata = pageMetadata({
-  title: "AcadTracker | All-in-One Consultancy Management Software",
+  title: "AcadTracker | Consultancy Management Software Built for Education Consultants",
   description:
-    "Manage students, visa applications, documents, and follow-ups in one platform built specifically for educational consultancies. Replace spreadsheets and chaos with AcadTracker.",
+    "Run your entire education consultancy from one platform. Track students, visa applications, documents, and follow-ups without spreadsheets, sticky notes, or missed deadlines.",
   path: "/",
 });
 
 const PROBLEMS = [
-  "Missed follow-ups and deadlines",
-  "Confusing application statuses",
-  "Lost or outdated documents",
-  "No single source of truth for student data",
+  "Follow-ups that fall through the cracks",
+  "Application statuses no one can agree on",
+  "Documents buried in email threads and folders",
+  "Student data scattered across a dozen spreadsheets",
 ];
 
 const FEATURES = [
   {
     icon: ListChecks,
     title: "Student Management",
-    description: "Personal details, academic history, visa status, and counseling notes, all in one unified profile.",
+    description: "Every student's personal details, academic history, visa status, and counseling notes live in one profile your whole team can trust.",
   }, {
     icon: Bell,
     title: "Smart Follow-Ups",
-    description: "Automatically maintain follow up lists so your team never misses a call or reminder.",
+    description: "Follow-up lists build themselves, so calls, deadlines, and reminders get handled instead of forgotten.",
   }, {
     icon: FolderClock,
     title: "Document Storage",
-    description: "Store transcripts, offer letters, payments, and visa documents with clear received/pending status.",
+    description: "Transcripts, offer letters, payment receipts, and visa documents, all stored with a clear received or pending status.",
   }, {
     icon: FileCheck2,
     title: "Application Tracking",
-    description: "Track universities applied to and see outcomes instantly, whether it is accepted, rejected, or pending.",
+    description: "See every university a student has applied to and where each application stands, accepted, rejected, or pending, at a glance.",
   },
 ];
 
 const DIFFERENTIATORS = [
-  "Simple UI your team can learn quickly",
-  "Works for small and large consultancies",
-  "No unnecessary or confusing features",
+  "An interface your team picks up in a day, not a quarter",
+  "Scales from a two-person office to a multi-branch consultancy",
+  "Built only for what consultancies actually do, nothing bolted on",
 ];
 
 const STEPS = [
@@ -61,13 +61,13 @@ export default function Home() {
               For education consultancies
             </p>
             <h1 className="mt-5 font-display text-4xl font-semibold leading-[1.1] tracking-tight text-white sm:text-5xl lg:text-[3.25rem]">
-              All your consultancy records.
-              <br className="hidden sm:block" /> One powerful platform.
+              Every student, application, and deadline.
+              <br className="hidden sm:block" /> One system of record.
             </h1>
             <p className="mx-auto mt-6 max-w-xl text-lg text-slate-300 lg:mx-0">
-              Manage students, documents, applications, and follow-ups
-              without spreadsheets or chaos. AcadTracker is built specifically
-              for educational consultancies.
+              AcadTracker gives your team a single, reliable place to manage
+              students, documents, applications, and follow-ups, purpose-built
+              for how educational consultancies actually work.
             </p>
             <div className="mt-9 flex flex-col justify-center gap-3 sm:flex-row lg:justify-start">
               <Link href="/contact-us" className="rounded-lg bg-blue px-7 py-3.5 text-center font-semibold text-white shadow-lg shadow-blue/30 transition hover:bg-blue-dark">
@@ -132,11 +132,11 @@ export default function Home() {
       <section className="px-4 py-16 sm:px-6 sm:py-20 lg:px-8">
         <div className="mx-auto max-w-5xl text-center">
           <h2 className="font-display text-2xl font-semibold text-ink sm:text-3xl">
-            Still Managing Everything in Excel?
+            Still Running Your Consultancy on Excel and WhatsApp?
           </h2>
           <p className="mt-4 text-muted">
-            Most consultancies still rely on spreadsheets, WhatsApp
-            messages, and scattered files.
+            Most consultancies are held together by spreadsheets, chat
+            threads, and whoever remembers to follow up.
           </p>
 
           <div className="mt-10 grid gap-4 text-left sm:grid-cols-2">
@@ -148,7 +148,7 @@ export default function Home() {
           </div>
 
           <p className="mt-8 font-semibold text-blue">
-            AcadTracker replaces chaos with clarity.
+            AcadTracker turns that chaos into one clear system of record.
           </p>
         </div>
       </section>
@@ -191,8 +191,9 @@ export default function Home() {
             Built Specifically for Educational Consultancies
           </h2>
           <p className="mx-auto mt-6 max-w-3xl text-muted">
-            AcadTracker is not a generic CRM and not another spreadsheet. It&apos;s
-            built around how consultancies actually work.
+            AcadTracker isn&apos;t a generic CRM stretched to fit, and it&apos;s not
+            another spreadsheet. It&apos;s built around how consultancies actually
+            move students from inquiry to offer letter.
           </p>
 
           <div className="mt-10 grid gap-4 text-left sm:grid-cols-3">
@@ -233,11 +234,11 @@ export default function Home() {
       <section className="px-4 py-20 sm:px-6 sm:py-24 lg:px-8">
         <div className="surface-navy mx-auto max-w-5xl rounded-2xl border border-white/10 px-6 py-14 text-center shadow-xl shadow-ink/20 sm:px-12 sm:py-16">
           <h2 className="font-display text-3xl font-semibold text-white sm:text-4xl">
-            Ready to Replace Spreadsheets for Good?
+            Ready to Retire the Spreadsheets?
           </h2>
           <p className="mx-auto mt-4 max-w-xl text-slate-300">
-            Bring clarity, structure, and efficiency to your consultancy
-            operations.
+            See how AcadTracker brings structure, accountability, and speed
+            to your day-to-day operations.
           </p>
           <div className="mt-10 flex flex-col justify-center gap-3 sm:flex-row">
             <Link href="/contact-us" className="rounded-lg bg-white px-7 py-3.5 text-center font-semibold text-ink transition hover:bg-slate-100">

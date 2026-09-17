@@ -2,8 +2,8 @@ import { ListChecks, Bell, FolderClock, FileCheck2, ShieldCheck, Lock } from "lu
 import { pageMetadata } from "@/lib/seo-config";
 
 export const metadata = pageMetadata({
-  title: "Features - Student Management, Visa Tracking & More",
-  description: "Explore AcadTracker's core features: student management, visa & application tracking, document storage, and smart follow-ups, all built for educational consultancies.",
+  title: "Features - Student Management, Visa Tracking, Documents & Follow-Ups",
+  description: "See how AcadTracker handles student management, visa and application tracking, document storage, and smart follow-ups in one platform built for education consultancies.",
   path: "/features",
 });
 
@@ -11,28 +11,28 @@ const FEATURES = [
   {
     icon: ListChecks,
     title: "Student Management",
-    description: "Keep every student's personal details, academic history, visa status, and counseling notes in one unified profile, so your team always has the full picture without digging through spreadsheets.",
+    description: "Every student's personal details, academic history, visa status, and counseling notes live in one profile, so your team gets the full picture without digging through spreadsheets.",
   }, {
     icon: Bell,
     title: "Smart Follow-Ups",
-    description: "AcadTracker automatically maintains follow-up lists for your team, so no call, deadline, or reminder slips through the cracks during a student's application journey.",
+    description: "Follow-up lists build and update themselves, so no call, deadline, or reminder slips through the cracks during a student's application journey.",
   }, {
     icon: FolderClock,
     title: "Document Storage",
-    description: "Store transcripts, offer letters, payment receipts, and visa documents with a clear received or pending status, eliminating lost paperwork and endless email threads.",
+    description: "Transcripts, offer letters, payment receipts, and visa documents, each tagged received or pending, so nothing gets lost in an email thread again.",
   }, {
     icon: FileCheck2,
     title: "Application Tracking",
     description:
-      "Track every university a student has applied to and see outcomes instantly, whether accepted, rejected, or pending, without switching between multiple tools.",
+      "See every university a student has applied to and the outcome, accepted, rejected, or pending, without switching between five different tools.",
   }, {
     icon: ShieldCheck,
     title: "Visa & Payment Monitoring",
-    description: "Monitor visa application stages and payment status side by side, giving your team an accurate, real-time view of where each student stands.",
+    description: "Visa stages and payment status sit side by side, giving your team an accurate, real-time view of exactly where each student stands.",
   }, {
     icon: Lock,
     title: "Role-Based Access Control",
-    description: "Control exactly what each team member can see and edit, keeping sensitive student and financial data secure as your consultancy grows.",
+    description: "Decide exactly what each team member can see and edit, so sensitive student and financial data stays protected as your consultancy grows.",
   },
 ];
 
@@ -46,10 +46,10 @@ export default function FeaturesPage() {
             Everything Your Consultancy Needs, In One Place
           </h1>
           <p className="mx-auto mt-6 max-w-2xl text-lg text-muted">
-            AcadTracker brings student management, visa tracking, document
-            storage, and follow-ups together in a single consultancy
-            management platform, so your team spends less time on admin
-            and more time helping students.
+            Student management, visa tracking, document storage, and
+            follow-ups, all in one consultancy management platform, so your
+            team spends less time on admin and more time getting students
+            to acceptance.
           </p>
         </div>
       </section>
