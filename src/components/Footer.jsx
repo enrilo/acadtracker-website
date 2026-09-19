@@ -52,16 +52,24 @@ export default function Footer() {
               </a>
             </div>
 
-            <div className="mt-4 flex flex-row items-center">
+            <div className="mt-4">
               <p className="text-xs uppercase tracking-wider text-white">
                 Follow us on:
               </p>
-              &nbsp;&nbsp;&nbsp;
-              {LINKEDIN.company && (
-              <a href={LINKEDIN.company} target="_blank" rel="noopener noreferrer" aria-label={`${PARENT_COMPANY.name} on LinkedIn`} className="text-slate-400 transition-colors hover:text-white">
-                <LinkedinIcon className="h-5 w-5" />
-              </a>
-            )}
+              <div className="mt-2 flex flex-col items-start gap-2">
+                {LINKEDIN.product && (
+                <a href={LINKEDIN.product} target="_blank" rel="noopener noreferrer" aria-label="AcadTracker on LinkedIn" className="inline-flex items-center gap-1.5 text-sm text-slate-300 transition-colors hover:text-white">
+                  <LinkedinIcon className="h-4 w-4 shrink-0" />
+                  AcadTracker
+                </a>
+                )}
+                {LINKEDIN.company && (
+                <a href={LINKEDIN.company} target="_blank" rel="noopener noreferrer" aria-label={`${PARENT_COMPANY.name} on LinkedIn`} className="inline-flex items-center gap-1.5 text-sm text-slate-300 transition-colors hover:text-white">
+                  <LinkedinIcon className="h-4 w-4 shrink-0" />
+                  {PARENT_COMPANY.name}
+                </a>
+                )}
+              </div>
             </div>
           </div>
 

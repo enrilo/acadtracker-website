@@ -46,7 +46,7 @@ export const PARENT_COMPANY = {
 // that link from the UI (e.g. the product page is still pending approval).
 export const LINKEDIN = {
   company: "https://www.linkedin.com/company/enrilo-technologies",
-  product: "", // AcadTracker LinkedIn product page (pending approval)
+  product: "https://www.linkedin.com/showcase/acad-tracker", // AcadTracker LinkedIn showcase page
   founders: [
     { name: "Aunsh Patel", url: "https://www.linkedin.com/in/aunsh-patel/" },
     { name: "Shoaib Shaikh", url: "https://www.linkedin.com/in/shoaib98/" },
