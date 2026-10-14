@@ -105,7 +105,7 @@ export default function TermsAndConditions() {
         <Section title="Contact Information"
           content={
             <>
-              <p>If you have questions about these Terms, please contact us at: <span className='font-medium text-[#2563EB]'>support@enrilotechnologies.com</span></p>
+              <p>If you have questions about these Terms, please contact us at: <span className='font-medium text-[#2563EB]'>contactus@enrilotechnologies.com</span></p>
             </>
           }
         />

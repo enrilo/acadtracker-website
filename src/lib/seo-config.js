@@ -1,9 +1,8 @@
 // Central SEO configuration.
-// IMPORTANT: Update SITE_URL to your real production domain before deploying.
 // Everything else (metadataBase, canonical URLs, sitemap, robots, OG tags)
 // is derived from this file, so this is the only place you need to edit.
 
-export const SITE_URL = "https://acadtracker.com"; // <-- change to your real domain
+export const SITE_URL = "https://acadtracker.com";
 export const SITE_NAME = "AcadTracker";
 export const DEFAULT_TITLE =
   "AcadTracker - Consultancy Management Software for Education Consultants";
@@ -24,8 +23,6 @@ export const SITE_KEYWORDS = [
   "overseas education consultancy tool",
 ];
 
-export const TWITTER_HANDLE = "@acadtracker"; // update or remove if you don't have one
-
 // AcadTracker is built and operated by its parent company, Enrilo Technologies.
 // Referenced in structured data (schema.org) and the site footer so search
 // engines and users can connect the product to the company behind it.
@@ -33,7 +30,7 @@ export const PARENT_COMPANY = {
   name: "Enrilo Technologies",
   legalName: "Enrilo Technologies LLP",
   url: "https://www.enrilotechnologies.com",
-  email: "support@enrilotechnologies.com",
+  email: "contactus@enrilotechnologies.com",
   logo: `${SITE_URL}/enrilo-tech-logo.png`,
   location: {
     city: "Vadodara",
@@ -60,6 +57,15 @@ export const OG_IMAGE = {
   alt: `${SITE_NAME} - Consultancy Management Platform`,
 };
 
+// Square AcadTracker logo for structured data (schema.org `logo`/`image`).
+// Google requires a square-ish logo of at least 112x112, so the 16:9 OG
+// banner must not be used here.
+export const PRODUCT_LOGO = {
+  url: `${SITE_URL}/icon.png`,
+  width: 500,
+  height: 500,
+};
+
 // Brand colour used for the mobile browser chrome (theme-color) and PWA.
 export const THEME_COLOR = "#16233f";
 
@@ -67,16 +73,21 @@ export const THEME_COLOR = "#16233f";
  * Build a consistent Next.js `metadata` object for a page.
  * Guarantees every page gets a canonical URL, OpenGraph + Twitter tags,
  * and an absolute OG image, so SEO metadata never drifts page to page.
+ * Pass `noIndex` for pages (e.g. 404) that must not be indexed or claim
+ * a canonical URL. Pass `title` as `{ absolute: "..." }` to skip the
+ * "| AcadTracker" suffix when the title already contains the brand.
  */
-export function pageMetadata({ title, description, path = "/", keywords }) {
+export function pageMetadata({ title, description, path = "/", keywords, noIndex = false }) {
   const url = `${SITE_URL}${path === "/" ? "" : path}`;
-  const fullTitle = title ? `${title} | ${SITE_NAME}` : DEFAULT_TITLE;
+  const fullTitle = title?.absolute ?? (title ? `${title} | ${SITE_NAME}` : DEFAULT_TITLE);
 
   return {
     title,
     description,
     keywords: keywords ?? SITE_KEYWORDS,
-    alternates: { canonical: path },
+    ...(noIndex
+      ? { robots: { index: false, follow: true }, alternates: { canonical: null } }
+      : { alternates: { canonical: path } }),
     openGraph: {
       type: "website",
       url,
@@ -88,8 +99,6 @@ export function pageMetadata({ title, description, path = "/", keywords }) {
     },
     twitter: {
       card: "summary_large_image",
-      site: TWITTER_HANDLE,
-      creator: TWITTER_HANDLE,
       title: fullTitle,
       description,
       images: [OG_IMAGE.url],

@@ -3,7 +3,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import CookieConsent from "@/components/CookieConsent";
 import favicon from "@/assets/images/svg/a-logo-transparent.svg";
-import { SITE_URL, SITE_NAME, DEFAULT_TITLE, DEFAULT_DESCRIPTION, SITE_KEYWORDS, TWITTER_HANDLE, OG_IMAGE, PARENT_COMPANY, LINKEDIN, THEME_COLOR } from "@/lib/seo-config";
+import { SITE_URL, SITE_NAME, DEFAULT_TITLE, DEFAULT_DESCRIPTION, SITE_KEYWORDS, OG_IMAGE, PRODUCT_LOGO, PARENT_COMPANY, LINKEDIN, THEME_COLOR } from "@/lib/seo-config";
 
 export const viewport = {
   themeColor: THEME_COLOR,
@@ -34,8 +34,9 @@ export const metadata = {
     statusBarStyle: "default",
   },
   icons: {
-    icon: favicon.src,
-    apple: "/icon.png",
+    // /favicon.ico is added automatically from src/app/favicon.ico.
+    icon: { url: favicon.src, type: "image/svg+xml" },
+    apple: { url: "/apple-touch-icon.png", sizes: "180x180" },
   },
   alternates: {
     canonical: "/",
@@ -51,8 +52,6 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    site: TWITTER_HANDLE,
-    creator: TWITTER_HANDLE,
     title: DEFAULT_TITLE,
     description: DEFAULT_DESCRIPTION,
     images: [OG_IMAGE.url],
@@ -94,7 +93,13 @@ const brandOrganizationJsonLd = {
   "@id": `${SITE_URL}/#organization`,
   name: SITE_NAME,
   url: SITE_URL,
-  logo: OG_IMAGE.url,
+  logo: {
+    "@type": "ImageObject",
+    url: PRODUCT_LOGO.url,
+    width: PRODUCT_LOGO.width,
+    height: PRODUCT_LOGO.height,
+  },
+  image: OG_IMAGE.url,
   description: DEFAULT_DESCRIPTION,
   ...(LINKEDIN.product && { sameAs: [LINKEDIN.product] }),
   parentOrganization: { "@id": `${PARENT_COMPANY.url}/#organization` },
@@ -112,16 +117,20 @@ const websiteJsonLd = {
 const softwareApplicationJsonLd = {
   "@context": "https://schema.org",
   "@type": "SoftwareApplication",
+  "@id": `${SITE_URL}/#software`,
   name: SITE_NAME,
   url: SITE_URL,
+  image: PRODUCT_LOGO.url,
   applicationCategory: "BusinessApplication",
   operatingSystem: "Web",
   description: DEFAULT_DESCRIPTION,
   offers: {
-    "@type": "AggregateOffer",
-    priceCurrency: "USD",
-    lowPrice: "0",
+    "@type": "Offer",
+    price: "6900",
+    priceCurrency: "INR",
+    url: `${SITE_URL}/pricing`,
   },
+  brand: { "@id": `${SITE_URL}/#organization` },
   publisher: { "@id": `${PARENT_COMPANY.url}/#organization` },
 };
 

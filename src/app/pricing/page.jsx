@@ -1,5 +1,5 @@
 import PricingClient from "./PricingClient";
-import { pageMetadata, SITE_URL, SITE_NAME } from "@/lib/seo-config";
+import { pageMetadata, SITE_URL, SITE_NAME, PRODUCT_LOGO, OG_IMAGE } from "@/lib/seo-config";
 
 export const metadata = pageMetadata({
   title: "Pricing - Simple Plans for Educational Consultancies",
@@ -12,19 +12,22 @@ const pricingJsonLd = {
   "@type": "Product",
   name: `${SITE_NAME} - Consultancy Management Software`,
   description: "Consultancy management software for educational consultancies: student management, visa and application tracking, document storage, and follow-ups.",
-  brand: { "@type": "Brand", name: SITE_NAME },
+  image: [PRODUCT_LOGO.url, OG_IMAGE.url],
+  brand: { "@type": "Brand", name: SITE_NAME, logo: PRODUCT_LOGO.url },
+  // Only plans with a published price are listed: an Offer without `price`
+  // is invalid, and Enterprise pricing is "Contact Us".
   offers: [
     {
       "@type": "Offer",
       name: "Regular",
       price: "6900",
       priceCurrency: "INR",
-      url: `${SITE_URL}/pricing`,
-      availability: "https://schema.org/InStock",
-    }, {
-      "@type": "Offer",
-      name: "Enterprise",
-      priceCurrency: "INR",
+      priceSpecification: {
+        "@type": "UnitPriceSpecification",
+        price: "6900",
+        priceCurrency: "INR",
+        referenceQuantity: { "@type": "QuantitativeValue", value: 1, unitCode: "MON" },
+      },
       url: `${SITE_URL}/pricing`,
       availability: "https://schema.org/InStock",
     },

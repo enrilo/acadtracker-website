@@ -257,7 +257,7 @@ export default function TermsOfService() {
               </p>
               <p className="mt-2">
                 Email:{" "}
-                <span className="text-[#2563EB]">support@enrilotechnologies.com</span>
+                <span className="text-[#2563EB]">contactus@enrilotechnologies.com</span>
               </p>
               <p className="mt-1">
                 Website:{" "}

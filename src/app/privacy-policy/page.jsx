@@ -251,7 +251,7 @@ export default function PrivacyPolicy() {
               <p className="mt-2 font-medium">
                 Grievance Officer – Enrilo Technologies LLP (AcadTracker)
               </p>
-              <p>Email: <span className="text-[#2563EB]">support@enrilotechnologies.com</span></p>
+              <p>Email: <span className="text-[#2563EB]">contactus@enrilotechnologies.com</span></p>
               <p className="mt-1">
                 We aim to resolve grievances within a reasonable timeframe.
               </p>
@@ -273,7 +273,7 @@ export default function PrivacyPolicy() {
             <>
               <p>If you have questions regarding this Privacy Policy:</p>
               <p className="mt-2">
-                Email: <span className="text-[#2563EB]">support@enrilotechnologies.com</span>
+                Email: <span className="text-[#2563EB]">contactus@enrilotechnologies.com</span>
               </p>
               <p className="mt-1">
                 Website:{" "}

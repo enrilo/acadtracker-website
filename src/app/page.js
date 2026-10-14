@@ -3,7 +3,7 @@ import { FileCheck2, Bell, FolderClock, ListChecks, CircleCheck, Clock } from "l
 import { pageMetadata } from "@/lib/seo-config";
 
 export const metadata = pageMetadata({
-  title: "AcadTracker | Consultancy Management Software Built for Education Consultants",
+  title: { absolute: "AcadTracker | Consultancy Management Software Built for Education Consultants" },
   description:
     "Run your entire education consultancy from one platform. Track students, visa applications, documents, and follow-ups without spreadsheets, sticky notes, or missed deadlines.",
   path: "/",

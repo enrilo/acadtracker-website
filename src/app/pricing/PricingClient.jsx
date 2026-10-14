@@ -104,7 +104,7 @@ export default function PricingClient() {
             {/* Price */}
             <div className="mt-6 min-h-24">
               <span className="text-3xl font-extrabold text-ink">
-                Custom Pricing
+                Contact Us
               </span>
               <p className="mt-1 text-sm text-muted">
                 Based on team size & requirements

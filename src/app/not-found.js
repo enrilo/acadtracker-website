@@ -5,7 +5,7 @@ import { pageMetadata } from "@/lib/seo-config";
 export const metadata = pageMetadata({
   title: "Page Not Found",
   description: "The page you're looking for doesn't exist or may have been moved. Head back to AcadTracker's homepage to find what you need.",
-  path: "/404",
+  noIndex: true,
 });
 
 const QUICK_LINKS = [
