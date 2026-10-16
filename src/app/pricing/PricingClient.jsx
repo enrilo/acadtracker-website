@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import Link from "next/link";
-import { Check } from "lucide-react";
+import { Check, Info } from "lucide-react";
 
 export default function PricingClient() {
   const [billing, setBilling] = useState("monthly");
@@ -58,6 +58,9 @@ export default function PricingClient() {
                 /month{" "}
                 {billing === "annual" && <span>(billed annually)</span>}
               </span>
+              <p className="mt-2 flex items-center gap-1.5 text-base font-semibold text-ink">
+                + GST as applicable
+              </p>
 
               {billing === "annual" && (
                 <div className="mt-2">

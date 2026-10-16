@@ -128,6 +128,13 @@ const softwareApplicationJsonLd = {
     "@type": "Offer",
     price: "6900",
     priceCurrency: "INR",
+    priceSpecification: {
+      "@type": "UnitPriceSpecification",
+      price: "6900",
+      priceCurrency: "INR",
+      valueAddedTaxIncluded: false, // price is exclusive of GST
+      referenceQuantity: { "@type": "QuantitativeValue", value: 1, unitCode: "MON" },
+    },
     url: `${SITE_URL}/pricing`,
   },
   brand: { "@id": `${SITE_URL}/#organization` },
