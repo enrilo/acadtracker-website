@@ -8,9 +8,9 @@ export default function sitemap() {
     { path: "/features", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-09-17" },
     { path: "/pricing", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-10-14" },
     { path: "/contact-us", priority: 0.7, changeFrequency: "monthly", lastModified: "2026-09-17" },
-    { path: "/privacy-policy", priority: 0.3, changeFrequency: "yearly", lastModified: "2026-09-12" },
-    { path: "/terms-and-conditions", priority: 0.3, changeFrequency: "yearly", lastModified: "2026-09-12" },
-    { path: "/terms-of-service", priority: 0.3, changeFrequency: "yearly", lastModified: "2026-09-16" },
+    { path: "/privacy-policy", priority: 0.3, changeFrequency: "yearly", lastModified: "2026-10-18" },
+    { path: "/terms-and-conditions", priority: 0.3, changeFrequency: "yearly", lastModified: "2026-10-18" },
+    { path: "/terms-of-service", priority: 0.3, changeFrequency: "yearly", lastModified: "2026-10-18" },
   ];
 
   return routes.map((route) => ({

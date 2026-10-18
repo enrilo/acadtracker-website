@@ -30,7 +30,7 @@ export default function PrivacyPolicy() {
               </li>
               <li>
                 Last updated on{" "}
-                <span className="font-bold">September 6, 2026</span>.
+                <span className="font-bold">October 18, 2026</span>.
               </li>
             </ul>
           }
@@ -111,7 +111,11 @@ export default function PrivacyPolicy() {
                 <li>University and college application details</li>
                 <li>Passport, visa, and immigration information</li>
                 <li>Financial records, payment receipts, and fee details</li>
-                <li>Documents uploaded to the platform</li>
+                <li>Documents uploaded to the platform for students</li>
+                <li>
+                  Documents uploaded for employees and users, mainly
+                  government-issued identity documents
+                </li>
                 <li>User account credentials and access roles</li>
                 <li>Usage logs, device information, and IP address</li>
               </ul>
@@ -233,12 +237,41 @@ export default function PrivacyPolicy() {
 
         <Section title="Security of Personal Data"
           content={
-            <p>
-              We implement appropriate technical and organizational security
-              measures to protect Personal Data against unauthorized access,
-              loss, misuse, or alteration. However, no method of transmission or
-              storage is completely secure.
-            </p>
+            <>
+              <p>
+                We implement appropriate technical and organizational security
+                measures to protect Personal Data against unauthorized access,
+                loss, misuse, or alteration.
+              </p>
+              <ul className="list-disc pl-6 mt-2 space-y-1">
+                <li>
+                  <strong>Document storage:</strong> Documents uploaded to the
+                  platform, whether for a student (irrespective of the type of
+                  document) or for a consultancy&apos;s employees or users
+                  (mainly government-issued identity documents), are stored
+                  with our cloud storage provider, which encrypts them at rest.
+                </li>
+                <li>
+                  <strong>Encrypted document links:</strong> The links to every
+                  uploaded document are encrypted before they are stored in
+                  our database.
+                </li>
+                <li>
+                  <strong>Access checks:</strong> Each time a document is
+                  requested, we verify that the person requesting it is
+                  authorized to view it before it is made available.
+                </li>
+                <li>
+                  <strong>Other data:</strong> Other Personal Data processed on
+                  the platform may or may not be encrypted, and is protected by
+                  the other security measures described in this section.
+                </li>
+              </ul>
+              <p className="mt-2">
+                However, no method of transmission or storage is completely
+                secure.
+              </p>
+            </>
           }
         />
 

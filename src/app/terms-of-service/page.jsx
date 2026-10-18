@@ -28,7 +28,7 @@ export default function TermsOfService() {
               </li>
               <li>
                 Last updated on{" "}
-                <span className="font-bold">September 6, 2026</span>.
+                <span className="font-bold">October 18, 2026</span>.
               </li>
             </ul>
           }
@@ -118,13 +118,24 @@ export default function TermsOfService() {
           content={
             <>
               <p>
-                AcadTracker acts as a Data Processor, and the consultancy acts as the
-                Data Fiduciary as defined under Indian law.
+                Enrilo Technologies LLP acts as a Data Processor, and the
+                consultancy acts as the Data Fiduciary as defined under Indian
+                law.
               </p>
               <p className="mt-2">
                 Processing of Personal Data is governed by our Privacy Policy
                 and Data Processing Agreement, which form an integral part of
                 these Terms.
+              </p>
+              <p className="mt-2">
+                Documents uploaded for students (irrespective of the type of
+                document) and for your employees or users (mainly
+                government-issued identity documents) are stored with our cloud
+                storage provider, which encrypts them at rest. The links to every uploaded document are
+                encrypted before they are stored in our database, and each time
+                a document is requested, we verify that the person requesting
+                it is authorized to view it. Other data processed through the
+                Service may or may not be encrypted.
               </p>
             </>
           }
@@ -153,9 +164,9 @@ export default function TermsOfService() {
           content={
             <p>
               You are responsible for configuring user roles, permissions, and
-              access controls within your organization. AcadTracker is not
-              responsible for unauthorized access resulting from improper role
-              assignment by the customer.
+              access controls within your organization. Enrilo Technologies LLP
+              is not responsible for unauthorized access resulting from
+              improper role assignment by you.
             </p>
           }
         />

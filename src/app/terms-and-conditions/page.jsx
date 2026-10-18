@@ -24,7 +24,7 @@ export default function TermsAndConditions() {
             <>
               <ul className="list-disc pl-6 mt-2 space-y-1">
                 <li>These Terms are effective as of <span className="font-bold">September 6, 2026</span>.</li>
-                <li>Last updated on  <span className="font-bold">September 6, 2026</span>.</li>
+                <li>Last updated on <span className="font-bold">October 18, 2026</span>.</li>
               </ul>
             </>
           } />
@@ -88,9 +88,20 @@ export default function TermsAndConditions() {
 
         <Section title="Data Ownership" content="You retain ownership of all data you upload to AcadTracker. By using the platform, you grant AcadTracker a limited license to store, process, and display this data solely for the purpose of providing the services." />
 
+        <Section title="Document Security"
+          content={
+            <ul className="list-disc pl-6 mt-2 space-y-1">
+              <li>Documents uploaded for students (irrespective of the type of document) and for your employees or users (mainly government-issued identity documents) are stored with our cloud storage provider, which encrypts them at rest.</li>
+              <li>The links to every uploaded document are encrypted before they are stored in our database.</li>
+              <li>Each time a document is requested, we verify that the person requesting it is authorized to view it.</li>
+              <li>Other data on the platform may or may not be encrypted. See our Privacy Policy for details of how we protect your data.</li>
+            </ul>
+          }
+        />
+
         <Section title="Subscription & Payments" content="All features of AcadTracker require a paid subscription. Pricing, billing cycles, and payment terms will be clearly communicated at the time of purchase. Failure to complete payments may result in account suspension or termination." />
 
-        <Section title="Service Availability" content="While we strive to provide uninterrupted service, AcadTracker does not guarantee that the platform will always be available or error-free. Maintenance, updates, or unforeseen issues may result in temporary downtime." />
+        <Section title="Service Availability" content="While we strive to provide uninterrupted service, Enrilo Technologies LLP does not guarantee that the platform will always be available or error-free. Maintenance, updates, or unforeseen issues may result in temporary downtime." />
 
         <Section title="Termination" content="We reserve the right to suspend or terminate your account if you violate these Terms or misuse the platform. You may also terminate your account at any time, subject to applicable data retention policies." />
 
