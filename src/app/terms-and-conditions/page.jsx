@@ -86,7 +86,7 @@ export default function TermsAndConditions() {
           }
         />
 
-        <Section title="Data Ownership" content="You retain ownership of all data you upload to AcadTracker. By using the platform, you grant AcadTracker a limited license to store, process, and display this data solely for the purpose of providing the services." />
+        <Section title="Data Ownership" content="You retain ownership of all data you upload to AcadTracker. By using the platform, you grant Enrilo Technologies LLP, the owner of AcadTracker, a limited license to store, process, and display this data solely for the purpose of providing the services." />
 
         <Section title="Document Security"
           content={
