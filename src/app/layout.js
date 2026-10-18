@@ -3,6 +3,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import CookieConsent from "@/components/CookieConsent";
 import favicon from "@/assets/images/svg/a-logo-transparent.svg";
+import { planOffers } from "@/lib/plans";
 import { SITE_URL, SITE_NAME, DEFAULT_TITLE, DEFAULT_DESCRIPTION, SITE_KEYWORDS, OG_IMAGE, PRODUCT_LOGO, PARENT_COMPANY, LINKEDIN, THEME_COLOR } from "@/lib/seo-config";
 
 export const viewport = {
@@ -124,19 +125,7 @@ const softwareApplicationJsonLd = {
   applicationCategory: "BusinessApplication",
   operatingSystem: "Web",
   description: DEFAULT_DESCRIPTION,
-  offers: {
-    "@type": "Offer",
-    price: "6900",
-    priceCurrency: "INR",
-    priceSpecification: {
-      "@type": "UnitPriceSpecification",
-      price: "6900",
-      priceCurrency: "INR",
-      valueAddedTaxIncluded: false, // price is exclusive of GST
-      referenceQuantity: { "@type": "QuantitativeValue", value: 1, unitCode: "MON" },
-    },
-    url: `${SITE_URL}/pricing`,
-  },
+  offers: planOffers(),
   brand: { "@id": `${SITE_URL}/#organization` },
   publisher: { "@id": `${PARENT_COMPANY.url}/#organization` },
 };

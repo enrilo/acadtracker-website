@@ -12,13 +12,20 @@ import { LINKEDIN } from "@/lib/seo-config";
 const PLAN_INTRO = {
   enterprise: "I'm interested in the Enterprise plan and would like to discuss pricing and requirements for my team.\n\n",
   regular: "I'm interested in getting started with the Regular plan.\n\n",
+  lite: "I'm interested in getting started with the Lite plan.\n\n",
+};
+
+const PLAN_SUBJECT = {
+  enterprise: "Enterprise Plan Inquiry",
+  regular: "Regular Plan Inquiry",
+  lite: "Lite Plan Inquiry",
 };
 
 export default function ContactUsClient() {
   const [state, handleSubmit] = useForm("mredebve");
   const searchParams = useSearchParams();
   const plan = searchParams.get("plan");
-  const subject = plan === "enterprise" ? "Enterprise Plan Inquiry" : plan === "regular" ? "Regular Plan Inquiry" : "";
+  const subject = PLAN_SUBJECT[plan] || "";
 
   // Form states
   const [full_name, setFullName] = useState("");

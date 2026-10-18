@@ -1,11 +1,18 @@
-import { ListChecks, Bell, FolderClock, FileCheck2, ShieldCheck, Lock } from "lucide-react";
+import { ListChecks, Bell, FolderClock, FileCheck2, ShieldCheck, Lock, Stamp } from "lucide-react";
 import { pageMetadata } from "@/lib/seo-config";
 
 export const metadata = pageMetadata({
-  title: "Features - Student Management, Visa Tracking, Documents & Follow-Ups",
-  description: "See how AcadTracker handles student management, visa and application tracking, document storage, and smart follow-ups in one platform built for education consultancies.",
+  title: "Features - Student Management, Visa Applications, Documents & Follow-Ups",
+  description: "See how AcadTracker handles student management, visa applications for students and visa-only clients, application tracking, document storage, and smart follow-ups in one platform built for education consultancies.",
   path: "/features",
 });
+
+// Highlighted above the grid as the newest module.
+const VISA_MODULE = {
+  icon: Stamp,
+  title: "Visa Application Module",
+  description: "Every visa application in one place, whether it belongs to a student you're already counseling or a client who comes to you only for a visa to another country. Track each application's stage, documents, and outcome without keeping a separate register for visa-only clients.",
+};
 
 const FEATURES = [
   {
@@ -46,7 +53,7 @@ export default function FeaturesPage() {
             Everything Your Consultancy Needs, In One Place
           </h1>
           <p className="mx-auto mt-6 max-w-2xl text-lg text-muted">
-            Student management, visa tracking, document storage, and
+            Student management, visa applications, document storage, and
             follow-ups, all in one consultancy management platform, so your
             team spends less time on admin and more time getting students
             to acceptance.
@@ -56,6 +63,16 @@ export default function FeaturesPage() {
 
       <section className="px-4 py-14 sm:px-6 sm:py-20 lg:px-8">
         <div className="mx-auto grid max-w-6xl gap-6 sm:grid-cols-2">
+          <div className="card-lift rounded-xl border border-blue/40 bg-white p-6 sm:col-span-2">
+            <div className="flex items-center gap-3">
+              <div className="flex h-11 w-11 items-center justify-center rounded-lg bg-blue-light">
+                <VISA_MODULE.icon size={22} className="text-blue" />
+              </div>
+              <span className="stamp-blue">New</span>
+            </div>
+            <h2 className="mt-4 text-xl font-semibold text-ink">{VISA_MODULE.title}</h2>
+            <p className="mt-2 max-w-3xl text-muted">{VISA_MODULE.description}</p>
+          </div>
           {FEATURES.map(({ icon: Icon, title, description }) => (
             <div key={title} className="card-lift rounded-xl border border-slate-line bg-white p-6">
               <div className="flex h-11 w-11 items-center justify-center rounded-lg bg-blue-light">

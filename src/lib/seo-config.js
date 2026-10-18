@@ -19,6 +19,8 @@ export const SITE_KEYWORDS = [
   "visa application tracking software",
   "study abroad consultancy CRM",
   "student visa management platform",
+  "visa application management software",
+  "visa consultancy software",
   "education agent software",
   "overseas education consultancy tool",
 ];
