@@ -39,7 +39,7 @@ export default function PrivacyPolicy() {
         <div className="mt-10 wrap-break-word">
           <Section icon={icons[0]} title="Effective Date"
             content={
-              <ul className="list-disc pl-6 mt-2 space-y-1">
+              <ul className="list-disc pl-6 mb-2 space-y-1">
                 <li>
                   This Privacy Policy is effective as of{" "}
                   <span className="font-bold">September 6, 2026</span>.
@@ -54,28 +54,28 @@ export default function PrivacyPolicy() {
 
           <Section icon={icons[1]} title="Introduction"
             content={
-              <>
-                <p>
+              <ul className="list-disc pl-6 mb-2 space-y-1">
+                <li>
                   This Privacy Policy describes how Enrilo Technologies LLP
                   (“Company”, “we”, “us”, or “our”), the operator of the
                   AcadTracker platform, collects, uses, stores, and protects
                   Personal Data when you use our platform and services (“Service”).
-                </p>
-                <p className="mt-2">
+                </li>
+                <li>
                   Our Service is intended for use by educational consultancies and
                   similar organizations. Students and individuals whose data is
                   processed do not directly contract with us.
-                </p>
-                <p className="mt-2">
+                </li>
+                <li>
                   This Policy is drafted in accordance with the Digital Personal
                   Data Protection Act, 2023 (“DPDP Act”) and other applicable laws
                   of India.
-                </p>
-                <p className="mt-2">
+                </li>
+                <li>
                   Consultancies using the Service represent that they have obtained
                   valid consent from students and individuals before uploading their data.
-                </p>
-              </>
+                </li>
+              </ul>
             }
           />
 
@@ -83,7 +83,7 @@ export default function PrivacyPolicy() {
             content={
               <>
                 <h3 className="font-semibold mt-4">Definitions</h3>
-                <ul className="list-disc pl-6 mt-2 space-y-1">
+                <ul className="list-disc pl-6 mb-2 space-y-1">
                   <li>
                     <strong>Company:</strong> Enrilo Technologies LLP, Vadodara,
                     Gujarat, India, the operator of AcadTracker.
@@ -119,7 +119,7 @@ export default function PrivacyPolicy() {
                   Depending on how the Service is used, we may collect and process
                   the following categories of Personal Data:
                 </p>
-                <ul className="list-disc pl-6 mt-2 space-y-1">
+                <ul className="list-disc pl-6 mb-2 space-y-1">
                   <li>Full name, email address, phone number</li>
                   <li>Residential address and location details</li>
                   <li>Educational records and test scores</li>
@@ -142,7 +142,7 @@ export default function PrivacyPolicy() {
             content={
               <>
                 <p>We process Personal Data strictly for the following purposes:</p>
-                <ul className="list-disc pl-6 mt-2 space-y-1">
+                <ul className="list-disc pl-6 mb-2 space-y-1">
                   <li>Providing and maintaining the Service</li>
                   <li>Managing student admissions and applications</li>
                   <li>Document storage and record management</li>
@@ -157,13 +157,15 @@ export default function PrivacyPolicy() {
 
           <Section icon={icons[5]} title="Legal Basis for Processing"
             content={
-              <p>
-                We process Personal Data based on consent, contractual necessity,
-                and legitimate use as permitted under the Digital Personal Data
-                Protection Act, 2023. Consultancies using the Service represent
-                that they have obtained valid consent from students whose data is
-                processed on the platform.
-              </p>
+              <ul className="list-disc pl-6 mb-2 space-y-1">
+                <li>
+                  We process Personal Data based on consent, contractual necessity,
+                  and legitimate use as permitted under the Digital Personal Data
+                  Protection Act, 2023. Consultancies using the Service represent
+                  that they have obtained valid consent from students whose data is
+                  processed on the platform.
+                </li>
+              </ul>
             }
           />
 
@@ -174,7 +176,7 @@ export default function PrivacyPolicy() {
                   We do not sell or rent Personal Data. Personal Data may be shared
                   only in the following circumstances:
                 </p>
-                <ul className="list-disc pl-6 mt-2 space-y-1">
+                <ul className="list-disc pl-6 mb-2 space-y-1">
                   <li>
                     With trusted Service Providers (cloud hosting, storage,
                     communication services) strictly for operating the Service
@@ -192,44 +194,48 @@ export default function PrivacyPolicy() {
 
           <Section icon={icons[7]} title="Data Retention"
             content={
-              <p>
-                Personal Data is retained only for as long as necessary to fulfill
-                the purposes outlined in this Policy or to comply with legal
-                obligations. Upon account termination or valid deletion requests,
-                data is securely deleted or anonymized unless retention is
-                required by law.
-              </p>
+              <ul className="list-disc pl-6 mb-2 space-y-1">
+                <li>
+                  Personal Data is retained only for as long as necessary to fulfill
+                  the purposes outlined in this Policy or to comply with legal
+                  obligations. Upon account termination or valid deletion requests,
+                  data is securely deleted or anonymized unless retention is
+                  required by law.
+                </li>
+              </ul>
             }
           />
 
           <Section icon={icons[8]} title="Cross-Border Data Transfers"
             content={
-              <p>
+              <ul className="list-disc pl-6 mb-2 space-y-1">
+                <li>
                 Personal Data may be stored or processed outside India using secure
                 cloud infrastructure. Such transfers are conducted in compliance
                 with the DPDP Act and appropriate technical and organizational
                 safeguards are implemented.
-              </p>
+                </li>
+              </ul>
             }
           />
 
           <Section icon={icons[9]} title="Children’s Personal Data"
             content={
-              <>
-                <p>
+              <ul className="list-disc pl-6 mb-2 space-y-1">
+                <li>
                   The Service processes data of students and leads irrespective of
                   age, and students do not contract with us directly. Where a
                   student is under 18, the consultancy acting as Data Fiduciary is
                   responsible for obtaining verifiable consent from a parent or
                   legal guardian before uploading that student&apos;s data, as
                   required by the DPDP Act.
-                </p>
-                <p className="mt-2">
+                </li>
+                <li>
                   We do not use any data, whether of students, leads, or employees,
                   for behavioural tracking, profiling, or targeted advertising,
                   irrespective of age.
-                </p>
-              </>
+                </li>
+              </ul>
             }
           />
 
@@ -239,7 +245,7 @@ export default function PrivacyPolicy() {
                 <p>
                   Subject to applicable law, you have the right to:
                 </p>
-                <ul className="list-disc pl-6 mt-2 space-y-1">
+                <ul className="list-disc pl-6 mb-2 space-y-1">
                   <li>Access your Personal Data</li>
                   <li>Request correction or updating of inaccurate data</li>
                   <li>Request deletion of Personal Data</li>
@@ -258,7 +264,7 @@ export default function PrivacyPolicy() {
                   measures to protect Personal Data against unauthorized access,
                   loss, misuse, or alteration.
                 </p>
-                <ul className="list-disc pl-6 mt-2 space-y-1">
+                <ul className="list-disc pl-6 mb-3 space-y-1">
                   <li>
                     <strong>Document storage:</strong> Documents uploaded to the
                     platform, whether for a student (irrespective of the type of
@@ -282,7 +288,7 @@ export default function PrivacyPolicy() {
                     the other security measures described in this section.
                   </li>
                 </ul>
-                <p className="mt-2">
+                <p>
                   However, no method of transmission or storage is completely
                   secure.
                 </p>
@@ -292,35 +298,37 @@ export default function PrivacyPolicy() {
 
           <Section icon={icons[12]} title="Grievance Redressal"
             content={
-              <>
-                <p>
+              <ul className="list-disc pl-6 mb-2 space-y-1">
+                <li>
                   In accordance with the DPDP Act, grievances may be addressed to:
-                </p>
-                <p className="mt-2 font-medium">
+                </li>
+                <p className="mb-2 font-medium">
                   Grievance Officer – Enrilo Technologies LLP (AcadTracker)
                 </p>
                 <p>Email: <span className="text-[#2563EB]">contactus@enrilotechnologies.com</span></p>
-                <p className="mt-1">
+                <p>
                   We aim to resolve grievances within a reasonable timeframe.
                 </p>
-              </>
+              </ul>
             }
           />
 
           <Section icon={icons[13]} title="Changes to This Privacy Policy"
             content={
-              <p>
-                We may update this Privacy Policy periodically. Any changes will
-                be posted on this page with the updated effective date.
-              </p>
+              <ul className="list-disc pl-6 mb-2 space-y-1">
+                <li>
+                  We may update this Privacy Policy periodically. Any changes will
+                  be posted on this page with the updated effective date.
+                </li>
+              </ul>
             }
           />
 
           <Section icon={icons[14]} title="Contact Us"
             content={
-              <>
-                <p>If you have questions regarding this Privacy Policy:</p>
-                <p className="mt-2">
+              <ul className="list-disc pl-6 mb-2 space-y-1">
+                <li>If you have questions regarding this Privacy Policy:</li>
+                <p>
                   Email: <span className="text-[#2563EB]">contactus@enrilotechnologies.com</span>
                 </p>
                 <p className="mt-1">
@@ -329,7 +337,7 @@ export default function PrivacyPolicy() {
                     https://www.acadtracker.com/contact-us
                   </a>
                 </p>
-              </>
+              </ul>
             }
           />
         </div>

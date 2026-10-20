@@ -40,7 +40,7 @@ export default function TermsOfService() {
         <div className="mt-10 wrap-break-word">
           <Section icon={icons[0]} title="Effective Date"
             content={
-              <ul className="list-disc pl-6 mt-2 space-y-1">
+              <ul className="list-disc pl-6 mb-2 space-y-1">
                 <li>
                   These Terms of Service are effective as of{" "}
                   <span className="font-bold">September 6, 2026</span>.
@@ -55,29 +55,29 @@ export default function TermsOfService() {
 
           <Section icon={icons[1]} title="Introduction"
             content={
-              <>
-                <p>
+              <ul className="list-disc pl-6 mb-2 space-y-1">
+                <li>
                   These Terms of Service (“Terms”) govern access to and use of the
                   AcadTracker platform (“Service”) operated by Enrilo Technologies
                   LLP (“Company”, “we”, “us”, or “our”).
-                </p>
-                <p className="mt-2">
+                </li>
+                <li>
                   Our Service is intended for use by educational consultancies and
                   similar organizations. Students and individuals whose data is
                   processed on the platform do not directly contract with us.
-                </p>
-                <p className="mt-2">
+                </li>
+                <li>
                   By accessing or using the Service, you agree to be bound by
                   these Terms, our Privacy Policy, and our Data Processing
                   Agreement (“DPA”).
-                </p>
-              </>
+                </li>
+              </ul>
             }
           />
 
           <Section icon={icons[2]} title="Eligibility and Account Registration"
             content={
-              <ul className="list-disc pl-6 mt-2 space-y-1">
+              <ul className="list-disc pl-6 mb-2 space-y-1">
                 <li>
                   You must be a legally registered business or organization to
                   use the Service.
@@ -100,7 +100,7 @@ export default function TermsOfService() {
                 <p>
                   AcadTracker provides software tools that enable consultancies to:
                 </p>
-                <ul className="list-disc pl-6 mt-2 space-y-1">
+                <ul className="list-disc pl-6 mb-2 space-y-1">
                   <li>Manage student records and documents</li>
                   <li>Track university and college applications</li>
                   <li>Manage employee access and permissions</li>
@@ -112,7 +112,7 @@ export default function TermsOfService() {
 
           <Section icon={icons[4]} title="Customer Responsibilities"
             content={
-              <ul className="list-disc pl-6 mt-2 space-y-1">
+              <ul className="list-disc pl-6 mb-2 space-y-1">
                 <li>
                   You are solely responsible for the legality of the Personal Data
                   you upload or process using the Service.
@@ -135,18 +135,18 @@ export default function TermsOfService() {
 
           <Section icon={icons[5]} title="Data Protection and Privacy"
             content={
-              <>
-                <p>
+              <ul className="list-disc pl-6 mb-2 space-y-1">
+                <li>
                   Enrilo Technologies LLP acts as a Data Processor, and the
                   consultancy acts as the Data Fiduciary as defined under Indian
                   law.
-                </p>
-                <p className="mt-2">
+                </li>
+                <li>
                   Processing of Personal Data is governed by our Privacy Policy
                   and Data Processing Agreement, which form an integral part of
                   these Terms.
-                </p>
-                <p className="mt-2">
+                </li>
+                <li>
                   Documents uploaded for students (irrespective of the type of
                   document) and for your employees or users (mainly
                   government-issued identity documents) are stored with our cloud
@@ -155,147 +155,161 @@ export default function TermsOfService() {
                   a document is requested, we verify that the person requesting
                   it is authorized to view it. Other data processed through the
                   Service may or may not be encrypted.
-                </p>
-              </>
+                </li>
+              </ul>
             }
           />
 
           <Section icon={icons[16]} title="Children’s Data and No Behavioural Tracking"
             content={
-              <>
-                <p>
+              <ul className="list-disc pl-6 mb-2 space-y-1">
+                <li>
                   The Service processes data of students and leads irrespective of
                   age. Where a student is under 18, you, as the Data Fiduciary, are
                   responsible for obtaining verifiable consent from a parent or
                   legal guardian before uploading that student&apos;s data, as
                   required by the Digital Personal Data Protection Act, 2023.
-                </p>
-                <p className="mt-2">
+                </li>
+                <li>
                   We do not use any data, whether of students, leads, or employees,
                   for behavioural tracking, profiling, or targeted advertising,
                   irrespective of age.
-                </p>
-              </>
+                </li>
+              </ul>
             }
           />
 
           <Section icon={icons[6]} title="User Access and Permissions"
             content={
-              <p>
-                You are responsible for configuring user roles, permissions, and
-                access controls within your organization. Enrilo Technologies LLP
-                is not responsible for unauthorized access resulting from
-                improper role assignment by you.
-              </p>
+              <ul className="list-disc pl-6 mb-2 space-y-1">
+                <li>
+                  You are responsible for configuring user roles, permissions, and
+                  access controls within your organization. Enrilo Technologies LLP
+                  is not responsible for unauthorized access resulting from
+                  improper role assignment by you.
+                </li>
+              </ul>
             }
           />
 
           <Section icon={icons[7]} title="Subscription, Fees, and Payments"
             content={
-              <p>
-                All features of the Service require payment of fees.
-                Pricing, billing cycles, and payment terms shall be communicated
-                separately and agreed upon prior to activation of paid features.
-              </p>
+              <ul className="list-disc pl-6 mb-2 space-y-1">
+                <li>
+                  All features of the Service require payment of fees.
+                  Pricing, billing cycles, and payment terms shall be communicated
+                  separately and agreed upon prior to activation of paid features.
+                </li>
+              </ul>
             }
           />
 
           <Section icon={icons[8]} title="Intellectual Property"
             content={
-              <>
-                <p>
+              <ul className="list-disc pl-6 mb-2 space-y-1">
+                <li>
                   The Service, including all software, designs, logos, and
                   content, is the intellectual property of Enrilo Technologies LLP.
-                </p>
-                <p className="mt-2">
+                </li>
+                <li>
                   You are granted a limited, non-exclusive, non-transferable
                   license to use the Service for your internal business purposes.
-                </p>
-              </>
+                </li>
+              </ul>
             }
           />
 
           <Section icon={icons[9]} title="Service Availability and Modifications"
             content={
-              <p>
-                We strive to maintain high availability but do not guarantee
-                uninterrupted access. We may modify, suspend, or discontinue
-                features with reasonable notice.
-              </p>
+              <ul className="list-disc pl-6 mb-2 space-y-1">
+                <li>
+                  We strive to maintain high availability but do not guarantee
+                  uninterrupted access. We may modify, suspend, or discontinue
+                  features with reasonable notice.
+                </li>
+              </ul>
             }
           />
 
           <Section icon={icons[10]} title="Termination"
             content={
-              <>
-                <p>
+              <ul className="list-disc pl-6 mb-2 space-y-1">
+                <li>
                   We may suspend or terminate access to the Service if you violate
                   these Terms or applicable laws.
-                </p>
-                <p className="mt-2">
+                </li>
+                <li>
                   Upon termination, data handling shall be governed by the DPA
                   and applicable law.
-                </p>
-              </>
+                </li>
+              </ul>
             }
           />
 
           <Section icon={icons[11]} title="Limitation of Liability"
             content={
-              <p>
-                To the maximum extent permitted by law, Enrilo Technologies LLP
-                shall not be liable for indirect, incidental, or consequential damages,
-                including loss of data or business opportunities.
-              </p>
+              <ul className="list-disc pl-6 mb-2 space-y-1">
+                <li>
+                  To the maximum extent permitted by law, Enrilo Technologies LLP
+                  shall not be liable for indirect, incidental, or consequential damages,
+                  including loss of data or business opportunities.
+                </li>
+              </ul>
             }
           />
 
           <Section icon={icons[12]} title="Indemnification"
             content={
-              <p>
+              <ul className="list-disc pl-6 mb-2 space-y-1">
+                <li>
                 You agree to indemnify and hold harmless Enrilo Technologies LLP from claims,
                 damages, or liabilities arising from your use of the Service or
                 violation of these Terms.
-              </p>
+                </li>
+              </ul>
             }
           />
 
           <Section icon={icons[13]} title="Governing Law and Jurisdiction"
             content={
-              <p>
+              <ul className="list-disc pl-6 mb-2 space-y-1">
+                <li>
                 These Terms shall be governed by the laws of India. Courts located
                 in India shall have exclusive jurisdiction.
-              </p>
+                </li>
+              </ul>
             }
           />
 
           <Section icon={icons[14]} title="Changes to These Terms"
             content={
-              <p>
+              <ul className="list-disc pl-6 mb-2 space-y-1">
+                <li>
                 We may update these Terms from time to time. Continued use of the
                 Service after updates constitutes acceptance of the revised
                 Terms.
-              </p>
+                </li>
+              </ul>
             }
           />
 
           <Section icon={icons[15]} title="Contact Us"
             content={
-              <>
-                <p>
+              <ul className="list-disc pl-6 mb-2 space-y-1">
+                <li>
                   If you have any questions regarding these Terms:
-                </p>
-                <p className="mt-2">
+                </li>
+                <p>
                   Email:{" "}
                   <span className="text-[#2563EB]">contactus@enrilotechnologies.com</span>
                 </p>
-                <p className="mt-1">
+                <p>
                   Website:{" "}
                   <a href="https://www.acadtracker.com/contact-us" className="text-[#2563EB] underline">
                     https://www.acadtracker.com/contact-us
                   </a>
                 </p>
-              </>
+              </ul>
             }
           />
         </div>

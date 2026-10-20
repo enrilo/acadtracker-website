@@ -40,26 +40,31 @@ export default function TermsAndConditions() {
 
         <div className="mt-10 wrap-break-word">
           <Section icon={icons[0]} title="Effective Date" content={
-              <>
-                <ul className="list-disc pl-6 mt-2 space-y-1">
-                  <li>These Terms are effective as of <span className="font-bold">September 6, 2026</span>.</li>
-                  <li>Last updated on <span className="font-bold">October 18, 2026</span>.</li>
-                </ul>
-              </>
-            } />
-
-          <Section icon={icons[1]} title="Introduction" content={
-            <>
-              <p>
-                These Terms and Conditions (&apos;Terms&apos;) govern your use of the AcadTracker platform, which is operated by Enrilo Technologies LLP (&apos;Company&apos;, &apos;we&apos;, &apos;us&apos;, or &apos;our&apos;). By accessing or using AcadTracker, you agree to be bound by these Terms, our Privacy Policy, and our Data Processing Agreement (DPA). If you do not agree, you must not use the platform.
-              </p>
-              <p className="mt-2">
-                AcadTracker is intended for use by educational consultancies and authorized representatives. Students and individuals whose data is processed do not directly contract with us.
-              </p>
-            </>
+            <ul className="list-disc pl-6 mb-2 space-y-1">
+              <li>These Terms are effective as of <span className="font-bold">September 6, 2026</span>.</li>
+              <li>Last updated on <span className="font-bold">October 18, 2026</span>.</li>
+            </ul>
           } />
 
-          <Section icon={icons[2]} title="Eligibility" content="AcadTracker is intended for use by educational consultancies and authorized representatives. You must be legally capable of entering into a binding agreement to use our services." />
+          <Section icon={icons[1]} title="Introduction" content={
+            <ul className="list-disc pl-6 mb-2 space-y-1">
+              <li>
+                These Terms and Conditions (&apos;Terms&apos;) govern your use of the AcadTracker platform, which is operated by Enrilo Technologies LLP (&apos;Company&apos;, &apos;we&apos;, &apos;us&apos;, or &apos;our&apos;). By accessing or using AcadTracker, you agree to be bound by these Terms, our Privacy Policy, and our Data Processing Agreement (DPA). If you do not agree, you must not use the platform.
+              </li>
+              <li>
+                AcadTracker is intended for use by educational consultancies and authorized representatives. Students and individuals whose data is processed do not directly contract with us.
+              </li>
+            </ul>
+          } />
+
+          <Section icon={icons[2]} title="Eligibility" 
+          content={
+            <ul className="list-disc pl-6 mb-2 space-y-1">
+              <li>
+                AcadTracker is intended for use by educational consultancies and authorized representatives. You must be legally capable of entering into a binding agreement to use our services.
+              </li>
+            </ul>
+          } />
 
           <Section icon={icons[3]} title="Account Registration"
             content={
@@ -67,7 +72,7 @@ export default function TermsAndConditions() {
                 <p>
                   To use AcadTracker, you must contact us to create an account. You agree to:
                 </p>
-                <ul className="list-disc pl-6 mt-2 space-y-2">
+                <ul className="list-disc pl-6 mb-2 space-y-2">
                   <li>Provide accurate and up-to-date information</li>
                   <li>Maintain the confidentiality of your login credentials</li>
                   <li>Notify us immediately of any unauthorized account use</li>
@@ -80,7 +85,7 @@ export default function TermsAndConditions() {
             content={
               <>
                 <p>You agree to use AcadTracker only for lawful purposes. You must not:</p>
-                <ul className="list-disc pl-6 mt-2 space-y-2">
+                <ul className="list-disc pl-6 mb-2 space-y-2">
                   <li>Upload false, misleading, or unauthorized data</li>
                   <li>Violate any applicable laws or regulations</li>
                   <li>Attempt to gain unauthorized access to the platform</li>
@@ -90,26 +95,38 @@ export default function TermsAndConditions() {
             }
           />
 
-          <Section icon={icons[5]} title="Student Data Responsibility" content="You acknowledge that any student data uploaded to AcadTracker is your responsibility. You confirm that you have obtained all necessary permissions and consents from students before storing or processing their information on the platform." />
+          <Section icon={icons[5]} title="Student Data Responsibility" content={
+            <ul className="list-disc pl-6 mb-2 space-y-2">
+              <li>
+                You acknowledge that any student data uploaded to AcadTracker is your responsibility. You confirm that you have obtained all necessary permissions and consents from students before storing or processing their information on the platform.
+              </li>
+            </ul>
+          } />
 
           <Section icon={icons[15]} title="Children’s Data and No Behavioural Tracking"
             content={
-              <>
-                <p>
+              <ul className="list-disc pl-6 mb-2 space-y-2">
+                <li>
                   AcadTracker processes data of students and leads irrespective of age. Where a student is under 18, you are responsible for obtaining verifiable consent from a parent or legal guardian before uploading that student&apos;s data, as required by the Digital Personal Data Protection Act, 2023.
-                </p>
-                <p className="mt-2">
+                </li>
+                <li>
                   We do not use any data, whether of students, leads, or employees, for behavioural tracking, profiling, or targeted advertising, irrespective of age.
-                </p>
-              </>
+                </li>
+              </ul>
             }
           />
 
-          <Section icon={icons[6]} title="Data Ownership" content="You retain ownership of all data you upload to AcadTracker. By using the platform, you grant Enrilo Technologies LLP, the owner of AcadTracker, a limited license to store, process, and display this data solely for the purpose of providing the services." />
+          <Section icon={icons[6]} title="Data Ownership" content={
+            <ul className="list-disc pl-6 mb-2 space-y-1">
+              <li>
+                You retain ownership of all data you upload to AcadTracker. By using the platform, you grant Enrilo Technologies LLP, the owner of AcadTracker, a limited license to store, process, and display this data solely for the purpose of providing the services.
+              </li>
+            </ul>
+          } />
 
           <Section icon={icons[16]} title="Document Security"
             content={
-              <ul className="list-disc pl-6 mt-2 space-y-1">
+              <ul className="list-disc pl-6 mb-2 space-y-1">
                 <li>Documents uploaded for students (irrespective of the type of document) and for your employees or users (mainly government-issued identity documents) are stored with our cloud storage provider, which encrypts them at rest.</li>
                 <li>The links to every uploaded document are encrypted before they are stored in our database.</li>
                 <li>Each time a document is requested, we verify that the person requesting it is authorized to view it.</li>
@@ -118,25 +135,67 @@ export default function TermsAndConditions() {
             }
           />
 
-          <Section icon={icons[7]} title="Subscription & Payments" content="All features of AcadTracker require a paid subscription. Pricing, billing cycles, and payment terms will be clearly communicated at the time of purchase. Failure to complete payments may result in account suspension or termination." />
+          <Section icon={icons[7]} title="Subscription & Payments" content={
+            <ul className="list-disc pl-6 mb-2 space-y-1">
+              <li>
+                All features of AcadTracker require a paid subscription. Pricing, billing cycles, and payment terms will be clearly communicated at the time of purchase. Failure to complete payments may result in account suspension or termination.
+              </li>
+            </ul>
+          } />
 
-          <Section icon={icons[8]} title="Service Availability" content="While we strive to provide uninterrupted service, Enrilo Technologies LLP does not guarantee that the platform will always be available or error-free. Maintenance, updates, or unforeseen issues may result in temporary downtime." />
+          <Section icon={icons[8]} title="Service Availability" content={
+            <ul className="list-disc pl-6 mb-2 space-y-1">
+              <li>
+                While we strive to provide uninterrupted service, Enrilo Technologies LLP does not guarantee that the platform will always be available or error-free. Maintenance, updates, or unforeseen issues may result in temporary downtime.
+              </li>
+            </ul>
+          } />
 
-          <Section icon={icons[9]} title="Termination" content="We reserve the right to suspend or terminate your account if you violate these Terms or misuse the platform. You may also terminate your account at any time, subject to applicable data retention policies." />
+          <Section icon={icons[9]} title="Termination" content={
+            <ul className="list-disc pl-6 mb-2 space-y-1">
+              <li>
+                We reserve the right to suspend or terminate your account if you violate these Terms or misuse the platform. You may also terminate your account at any time, subject to applicable data retention policies.
+              </li>
+            </ul>
+          } />
 
-          <Section icon={icons[10]} title="Limitation of Liability" content="To the maximum extent permitted by law, Enrilo Technologies LLP shall not be liable for any indirect, incidental, or consequential damages arising from your use of the platform." />
+          <Section icon={icons[10]} title="Limitation of Liability" content={
+            <ul className="list-disc pl-6 mb-2 space-y-1">
+              <li>
+                To the maximum extent permitted by law, Enrilo Technologies LLP shall not be liable for any indirect, incidental, or consequential damages arising from your use of the platform.
+              </li>
+            </ul>
+          } />
 
-          <Section icon={icons[11]} title="Indemnification" content="You agree to indemnify and hold Enrilo Technologies LLP harmless from any claims, damages, or liabilities arising from your use of the platform, including violations of these Terms or applicable laws." />
+          <Section icon={icons[11]} title="Indemnification" content={
+            <ul className="list-disc pl-6 mb-2 space-y-1">
+              <li>
+                You agree to indemnify and hold Enrilo Technologies LLP harmless from any claims, damages, or liabilities arising from your use of the platform, including violations of these Terms or applicable laws.
+              </li>
+            </ul>
+          } />
 
-          <Section icon={icons[12]} title="Changes to These Terms" content="We may update these Terms from time to time. Continued use of AcadTracker after changes are posted constitutes acceptance of the revised Terms." />
+          <Section icon={icons[12]} title="Changes to These Terms" content={
+            <ul className="list-disc pl-6 mb-2 space-y-1">
+              <li>
+                We may update these Terms from time to time. Continued use of AcadTracker after changes are posted constitutes acceptance of the revised Terms.
+              </li>
+            </ul>
+          } />
 
-          <Section icon={icons[13]} title="Governing Law" content="These Terms shall be governed by and interpreted in accordance to Vadodara Jurisdiction." />
+          <Section icon={icons[13]} title="Governing Law" content={
+            <ul className="list-disc pl-6 mb-2 space-y-1">
+              <li>
+                These Terms shall be governed by and interpreted in accordance to Vadodara Jurisdiction.
+              </li>
+            </ul>
+          } />
 
           <Section icon={icons[14]} title="Contact Us"
             content={
-              <>
-                <p>If you have questions about these Terms, please contact us at: <span className='font-medium text-[#2563EB]'>contactus@enrilotechnologies.com</span></p>
-              </>
+              <ul className="list-disc pl-6 mb-2 space-y-1">
+                <li>If you have questions about these Terms, please contact us at: <span className='font-medium text-[#2563EB]'>contactus@enrilotechnologies.com</span></li>
+              </ul>
             }
           />
         </div>
