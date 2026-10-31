@@ -68,7 +68,7 @@ export default function Header() {
               href="/contact-us"
               className="rounded-lg bg-ink px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-slate"
             >
-              Book A Demo
+              Book a Demo
             </Link>
           </div>
 
@@ -127,7 +127,7 @@ export default function Header() {
             href="/contact-us"
             className="mt-4 rounded-lg bg-ink px-5 py-3 text-center text-base font-semibold text-white"
           >
-            Book A Demo
+            Book a Demo
           </Link>
         </nav>
       </div>
