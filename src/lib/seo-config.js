@@ -48,7 +48,7 @@ export const LINKEDIN = {
   product: "https://www.linkedin.com/showcase/acad-tracker", // AcadTracker LinkedIn showcase page
   founders: [
     { name: "Aunsh Patel", url: "https://www.linkedin.com/in/aunsh-patel/" },
-    { name: "Shoaib Shaikh", url: "https://www.linkedin.com/in/shoaib98/" },
+    // { name: "Shoaib Shaikh", url: "https://www.linkedin.com/in/shoaib98/" },
   ],
 };
 
