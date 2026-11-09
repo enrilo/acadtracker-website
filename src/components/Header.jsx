@@ -65,10 +65,10 @@ export default function Header() {
 
           <div className="hidden lg:block">
             <Link
-              href="/contact-us"
+              href="https://calendly.com/contactus-enrilotechnologies/30min" target="_blank"
               className="rounded-lg bg-ink px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-slate"
             >
-              Book a Demo
+              Book a Walkthrough
             </Link>
           </div>
 
@@ -124,10 +124,10 @@ export default function Header() {
             Terms &amp; conditions
           </Link>
           <Link
-            href="/contact-us"
+            href="https://calendly.com/contactus-enrilotechnologies/30min" target="_blank"
             className="mt-4 rounded-lg bg-ink px-5 py-3 text-center text-base font-semibold text-white"
           >
-            Book a Demo
+            Book a Walkthrough
           </Link>
         </nav>
       </div>
