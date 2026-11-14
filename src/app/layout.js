@@ -2,6 +2,7 @@ import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import CookieConsent from "@/components/CookieConsent";
+import BookingProvider from "@/components/booking/BookingProvider";
 import favicon from "@/assets/images/svg/a-logo-transparent.svg";
 import { planOffers } from "@/lib/plans";
 import { SITE_URL, SITE_NAME, DEFAULT_TITLE, DEFAULT_DESCRIPTION, SITE_KEYWORDS, OG_IMAGE, PRODUCT_LOGO, PARENT_COMPANY, LINKEDIN, THEME_COLOR } from "@/lib/seo-config";
@@ -145,15 +146,17 @@ export default function RootLayout({ children }) {
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
-        <Header />
+        <BookingProvider>
+          <Header />
 
-        {/* THIS is the key */}
-        <main className="flex-1">
-          {children}
-        </main>
+          {/* THIS is the key */}
+          <main className="flex-1">
+            {children}
+          </main>
 
-        <Footer />
-        <CookieConsent />
+          <Footer />
+          <CookieConsent />
+        </BookingProvider>
       </body>
     </html>
   );

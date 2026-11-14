@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Menu, X } from "lucide-react";
+import BookWalkthroughButton from "@/components/booking/BookWalkthroughButton";
 
 const NAV_LINKS = [
   { href: "/", label: "Home" },
@@ -64,12 +65,7 @@ export default function Header() {
           </nav>
 
           <div className="hidden lg:block">
-            <Link
-              href="https://calendly.com/contactus-enrilotechnologies/30min" target="_blank"
-              className="rounded-lg bg-ink px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-slate"
-            >
-              Book a Walkthrough
-            </Link>
+            <BookWalkthroughButton className="rounded-lg bg-ink px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-slate" />
           </div>
 
           {/* Mobile toggle */}
@@ -123,12 +119,10 @@ export default function Header() {
           >
             Terms &amp; conditions
           </Link>
-          <Link
-            href="https://calendly.com/contactus-enrilotechnologies/30min" target="_blank"
+          <BookWalkthroughButton
+            onClick={() => setMenuOpen(false)}
             className="mt-4 rounded-lg bg-ink px-5 py-3 text-center text-base font-semibold text-white"
-          >
-            Book a Walkthrough
-          </Link>
+          />
         </nav>
       </div>
     </header>

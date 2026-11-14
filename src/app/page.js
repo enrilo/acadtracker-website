@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { FileCheck2, Bell, FolderClock, ListChecks, CircleCheck, Clock } from "lucide-react";
 import { pageMetadata } from "@/lib/seo-config";
+import BookWalkthroughButton from "@/components/booking/BookWalkthroughButton";
 
 export const metadata = pageMetadata({
   title: { absolute: "AcadTracker | Consultancy Management Software Built for Education Consultants" },
@@ -70,9 +71,7 @@ export default function Home() {
               for how educational consultancies actually work.
             </p>
             <div className="mt-9 flex flex-col justify-center gap-3 sm:flex-row lg:justify-start">
-              <Link href="https://calendly.com/contactus-enrilotechnologies/30min" target="_blank" className="rounded-lg bg-blue px-7 py-3.5 text-center font-semibold text-white shadow-lg shadow-blue/30 transition hover:bg-blue-dark">
-                Book a Walkthrough
-              </Link>
+              <BookWalkthroughButton className="rounded-lg bg-blue px-7 py-3.5 text-center font-semibold text-white shadow-lg shadow-blue/30 transition hover:bg-blue-dark" />
               <Link href="/pricing" className="rounded-lg border border-white/25 bg-white/5 px-7 py-3.5 text-center font-semibold text-white transition hover:bg-white/10">
                 See Pricing
               </Link>
@@ -241,9 +240,7 @@ export default function Home() {
             to your day-to-day operations.
           </p>
           <div className="mt-10 flex flex-col justify-center gap-3 sm:flex-row">
-            <Link href="https://calendly.com/contactus-enrilotechnologies/30min" target="_blank" className="rounded-lg bg-white px-7 py-3.5 text-center font-semibold text-ink transition hover:bg-slate-100">
-              Book a Walkthrough
-            </Link>
+            <BookWalkthroughButton className="rounded-lg bg-white px-7 py-3.5 text-center font-semibold text-ink transition hover:bg-slate-100" />
           </div>
         </div>
       </section>
