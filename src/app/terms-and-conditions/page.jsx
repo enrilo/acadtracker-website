@@ -49,7 +49,7 @@ export default function TermsAndConditions() {
           <Section icon={icons[1]} title="Introduction" content={
             <ul className="list-disc pl-6 mb-2 space-y-1">
               <li>
-                These Terms and Conditions (&apos;Terms&apos;) govern your use of the AcadTracker platform, which is operated by Enrilo Technologies LLP (&apos;Company&apos;, &apos;we&apos;, &apos;us&apos;, or &apos;our&apos;). By accessing or using AcadTracker, you agree to be bound by these Terms, our Privacy Policy, and our Data Processing Agreement (DPA). If you do not agree, you must not use the platform.
+                These Terms and Conditions (&apos;Terms&apos;) govern your use of the AcadTracker platform, which is operated by Enrilo Technologies{/* LLP */} (&apos;Company&apos;, &apos;we&apos;, &apos;us&apos;, or &apos;our&apos;). By accessing or using AcadTracker, you agree to be bound by these Terms, our Privacy Policy, and our Data Processing Agreement (DPA). If you do not agree, you must not use the platform.
               </li>
               <li>
                 AcadTracker is intended for use by educational consultancies and authorized representatives. Students and individuals whose data is processed do not directly contract with us.
@@ -119,7 +119,7 @@ export default function TermsAndConditions() {
           <Section icon={icons[6]} title="Data Ownership" content={
             <ul className="list-disc pl-6 mb-2 space-y-1">
               <li>
-                You retain ownership of all data you upload to AcadTracker. By using the platform, you grant Enrilo Technologies LLP, the owner of AcadTracker, a limited license to store, process, and display this data solely for the purpose of providing the services.
+                You retain ownership of all data you upload to AcadTracker. By using the platform, you grant Enrilo Technologies{/* LLP */}, the owner of AcadTracker, a limited license to store, process, and display this data solely for the purpose of providing the services.
               </li>
             </ul>
           } />
@@ -146,7 +146,7 @@ export default function TermsAndConditions() {
           <Section icon={icons[8]} title="Service Availability" content={
             <ul className="list-disc pl-6 mb-2 space-y-1">
               <li>
-                While we strive to provide uninterrupted service, Enrilo Technologies LLP does not guarantee that the platform will always be available or error-free. Maintenance, updates, or unforeseen issues may result in temporary downtime.
+                While we strive to provide uninterrupted service, Enrilo Technologies{/* LLP */} does not guarantee that the platform will always be available or error-free. Maintenance, updates, or unforeseen issues may result in temporary downtime.
               </li>
             </ul>
           } />
@@ -162,7 +162,7 @@ export default function TermsAndConditions() {
           <Section icon={icons[10]} title="Limitation of Liability" content={
             <ul className="list-disc pl-6 mb-2 space-y-1">
               <li>
-                To the maximum extent permitted by law, Enrilo Technologies LLP shall not be liable for any indirect, incidental, or consequential damages arising from your use of the platform.
+                To the maximum extent permitted by law, Enrilo Technologies{/* LLP */} shall not be liable for any indirect, incidental, or consequential damages arising from your use of the platform.
               </li>
             </ul>
           } />
@@ -170,7 +170,7 @@ export default function TermsAndConditions() {
           <Section icon={icons[11]} title="Indemnification" content={
             <ul className="list-disc pl-6 mb-2 space-y-1">
               <li>
-                You agree to indemnify and hold Enrilo Technologies LLP harmless from any claims, damages, or liabilities arising from your use of the platform, including violations of these Terms or applicable laws.
+                You agree to indemnify and hold Enrilo Technologies{/* LLP */} harmless from any claims, damages, or liabilities arising from your use of the platform, including violations of these Terms or applicable laws.
               </li>
             </ul>
           } />

@@ -30,7 +30,7 @@ export const SITE_KEYWORDS = [
 // engines and users can connect the product to the company behind it.
 export const PARENT_COMPANY = {
   name: "Enrilo Technologies",
-  legalName: "Enrilo Technologies LLP",
+  legalName: "Enrilo Technologies", // "Enrilo Technologies LLP"
   url: "https://www.enrilotechnologies.com",
   email: "contactus@enrilotechnologies.com",
   logo: `${SITE_URL}/enrilo-tech-logo.png`,

@@ -56,7 +56,7 @@ export default function PrivacyPolicy() {
             content={
               <ul className="list-disc pl-6 mb-2 space-y-1">
                 <li>
-                  This Privacy Policy describes how Enrilo Technologies LLP
+                  This Privacy Policy describes how Enrilo Technologies{/* LLP */}{" "}
                   (“Company”, “we”, “us”, or “our”), the operator of the
                   AcadTracker platform, collects, uses, stores, and protects
                   Personal Data when you use our platform and services (“Service”).
@@ -85,7 +85,7 @@ export default function PrivacyPolicy() {
                 <h3 className="font-semibold mt-4">Definitions</h3>
                 <ul className="list-disc pl-6 mb-2 space-y-1">
                   <li>
-                    <strong>Company:</strong> Enrilo Technologies LLP, Vadodara,
+                    <strong>Company:</strong> Enrilo Technologies{/* LLP */}, Vadodara,
                     Gujarat, India, the operator of AcadTracker.
                   </li>
                   <li>
@@ -100,7 +100,7 @@ export default function PrivacyPolicy() {
                     that determines the purpose and means of processing data.
                   </li>
                   <li>
-                    <strong>Data Processor:</strong> Enrilo Technologies LLP, which
+                    <strong>Data Processor:</strong> Enrilo Technologies{/* LLP */}, which
                     processes Personal Data on behalf of Data Fiduciaries.
                   </li>
                   <li>
@@ -303,7 +303,7 @@ export default function PrivacyPolicy() {
                   In accordance with the DPDP Act, grievances may be addressed to:
                 </li>
                 <p className="mb-2 font-medium">
-                  Grievance Officer – Enrilo Technologies LLP (AcadTracker)
+                  Grievance Officer – Enrilo Technologies{/* LLP */} (AcadTracker)
                 </p>
                 <p>Email: <span className="text-[#2563EB]">contactus@enrilotechnologies.com</span></p>
                 <p>

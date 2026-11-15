@@ -59,7 +59,7 @@ export default function TermsOfService() {
                 <li>
                   These Terms of Service (“Terms”) govern access to and use of the
                   AcadTracker platform (“Service”) operated by Enrilo Technologies
-                  LLP (“Company”, “we”, “us”, or “our”).
+                  {/* LLP */} (“Company”, “we”, “us”, or “our”).
                 </li>
                 <li>
                   Our Service is intended for use by educational consultancies and
@@ -137,7 +137,7 @@ export default function TermsOfService() {
             content={
               <ul className="list-disc pl-6 mb-2 space-y-1">
                 <li>
-                  Enrilo Technologies LLP acts as a Data Processor, and the
+                  Enrilo Technologies{/* LLP */} acts as a Data Processor, and the
                   consultancy acts as the Data Fiduciary as defined under Indian
                   law.
                 </li>
@@ -184,7 +184,7 @@ export default function TermsOfService() {
               <ul className="list-disc pl-6 mb-2 space-y-1">
                 <li>
                   You are responsible for configuring user roles, permissions, and
-                  access controls within your organization. Enrilo Technologies LLP
+                  access controls within your organization. Enrilo Technologies{/* LLP */}{" "}
                   is not responsible for unauthorized access resulting from
                   improper role assignment by you.
                 </li>
@@ -209,7 +209,7 @@ export default function TermsOfService() {
               <ul className="list-disc pl-6 mb-2 space-y-1">
                 <li>
                   The Service, including all software, designs, logos, and
-                  content, is the intellectual property of Enrilo Technologies LLP.
+                  content, is the intellectual property of Enrilo Technologies{/* LLP */}.
                 </li>
                 <li>
                   You are granted a limited, non-exclusive, non-transferable
@@ -250,7 +250,7 @@ export default function TermsOfService() {
             content={
               <ul className="list-disc pl-6 mb-2 space-y-1">
                 <li>
-                  To the maximum extent permitted by law, Enrilo Technologies LLP
+                  To the maximum extent permitted by law, Enrilo Technologies{/* LLP */}{" "}
                   shall not be liable for indirect, incidental, or consequential damages,
                   including loss of data or business opportunities.
                 </li>
@@ -262,7 +262,7 @@ export default function TermsOfService() {
             content={
               <ul className="list-disc pl-6 mb-2 space-y-1">
                 <li>
-                You agree to indemnify and hold harmless Enrilo Technologies LLP from claims,
+                You agree to indemnify and hold harmless Enrilo Technologies{/* LLP */} from claims,
                 damages, or liabilities arising from your use of the Service or
                 violation of these Terms.
                 </li>
