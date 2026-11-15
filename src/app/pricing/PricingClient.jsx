@@ -2,7 +2,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { Check } from "lucide-react";
-import { PLANS, CORE_FEATURES } from "@/lib/plans";
+import { PLANS, CORE_FEATURES, addOnsForPlan } from "@/lib/plans";
 
 export default function PricingClient() {
   const [billing, setBilling] = useState("monthly");
@@ -147,6 +147,51 @@ function PlanColumn({ plan, billing }) {
           </li>
         ))}
       </ul>
+
+      {/* Add-ons available on this plan */}
+      <AddOns planId={id} isAnnual={isAnnual} />
+    </div>
+  );
+}
+
+function AddOns({ planId, isAnnual }) {
+  const addOns = addOnsForPlan(planId);
+  if (addOns.length === 0) return null;
+
+  return (
+    <div className="mt-8 border-t border-slate-line pt-6">
+      <p className="text-xs font-semibold uppercase tracking-wider text-muted">
+        Optional add-ons
+      </p>
+      <p className="mt-1 text-sm text-muted">
+        {addOns.length > 1
+          ? "Each sold separately. Add only what you need."
+          : "Add only what you need."}
+      </p>
+      <ul className="mt-3 space-y-2">
+        {addOns.map((addOn) => {
+          const max = addOn.maxPerPlan?.[planId];
+          return (
+            <li key={addOn.id} className="rounded-lg border border-slate-line bg-white px-4 py-3">
+              <div className="flex items-baseline justify-between gap-3">
+                <span className="font-medium text-ink">Extra {addOn.name}</span>
+                <span className="whitespace-nowrap text-ink">
+                  <span className="font-semibold">
+                    {formatINR(isAnnual ? addOn.price.annual : addOn.price.monthly)}
+                  </span>
+                  <span className="text-sm text-muted"> each/month</span>
+                </span>
+              </div>
+              {max && (
+                <p className="mt-1 text-sm text-muted">
+                  Up to {max} on Lite. Need more? Choose Regular.
+                </p>
+              )}
+            </li>
+          );
+        })}
+      </ul>
+      <p className="mt-2 text-xs text-muted">+ GST as applicable</p>
     </div>
   );
 }

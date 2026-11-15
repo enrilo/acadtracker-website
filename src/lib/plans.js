@@ -58,6 +58,31 @@ export const PLANS = [
   },
 ];
 
+// Extra seats customers can add on top of their plan. Same rate on every
+// plan; INR per seat per month, exclusive of GST.
+// `plans` lists the plan ids the add-on can be bought on. `maxPerPlan` caps
+// how many can be added on a plan; past that, the customer is pointed to the
+// next plan up (Lite customers needing 5+ extra users go to Regular).
+export const ADD_ONS = [
+  {
+    id: "master-admin",
+    name: "Master Admin",
+    price: { monthly: 149, annual: 110 },
+    plans: ["regular", "enterprise"],
+  }, {
+    id: "user",
+    name: "User",
+    price: { monthly: 79, annual: 59 },
+    plans: ["lite", "regular", "enterprise"],
+    maxPerPlan: { lite: 4 },
+  },
+];
+
+/** Add-ons that can be bought on the given plan. */
+export function addOnsForPlan(planId) {
+  return ADD_ONS.filter((addOn) => addOn.plans.includes(planId));
+}
+
 /**
  * schema.org Offer objects for every plan with a published price.
  * Plans without a price are skipped: an Offer without `price` is invalid.
