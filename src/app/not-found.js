@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { FileQuestion } from "lucide-react";
+import TrackedLink from "@/components/TrackedLink";
 import { pageMetadata } from "@/lib/seo-config";
 
 export const metadata = pageMetadata({
@@ -11,8 +12,8 @@ export const metadata = pageMetadata({
 const QUICK_LINKS = [
   { href: "/", label: "Home" },
   { href: "/features", label: "Features" },
-  { href: "/pricing", label: "Pricing" },
-  { href: "/contact-us", label: "Contact Us" },
+  { href: "/pricing", label: "Pricing", event: "view_pricing_click" },
+  { href: "/contact-us", label: "Contact Us", event: "contact_click" },
 ];
 
 export default function NotFound() {
@@ -36,19 +37,25 @@ export default function NotFound() {
           <Link href="/" className="rounded-lg bg-blue px-7 py-3.5 text-center font-semibold text-white shadow-lg shadow-blue/30 transition hover:bg-blue-dark">
             Back to Home
           </Link>
-          <Link href="/contact-us" className="rounded-lg border border-slate-line bg-white px-7 py-3.5 text-center font-semibold text-ink transition hover:bg-paper">
+          <TrackedLink href="/contact-us" event="contact_click" eventParams={{ location: "404_page" }} className="rounded-lg border border-slate-line bg-white px-7 py-3.5 text-center font-semibold text-ink transition hover:bg-paper">
             Contact Us
-          </Link>
+          </TrackedLink>
         </div>
 
         <div className="mx-auto mt-12 max-w-md">
           <div className="divider-perforated" />
           <div className="mt-8 flex flex-wrap items-center justify-center gap-x-6 gap-y-3">
-            {QUICK_LINKS.map((link) => (
-              <Link key={link.href} href={link.href} className="text-sm font-semibold text-muted transition-colors hover:text-ink">
-                {link.label}
-              </Link>
-            ))}
+            {QUICK_LINKS.map((link) =>
+              link.event ? (
+                <TrackedLink key={link.href} href={link.href} event={link.event} eventParams={{ location: "404_page" }} className="text-sm font-semibold text-muted transition-colors hover:text-ink">
+                  {link.label}
+                </TrackedLink>
+              ) : (
+                <Link key={link.href} href={link.href} className="text-sm font-semibold text-muted transition-colors hover:text-ink">
+                  {link.label}
+                </Link>
+              )
+            )}
           </div>
         </div>
       </div>

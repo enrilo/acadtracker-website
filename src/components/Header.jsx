@@ -5,12 +5,13 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Menu, X } from "lucide-react";
 import BookWalkthroughButton from "@/components/booking/BookWalkthroughButton";
+import { trackEvent } from "@/lib/analytics";
 
 const NAV_LINKS = [
   { href: "/", label: "Home" },
   { href: "/features", label: "Features" },
-  { href: "/pricing", label: "Pricing" },
-  { href: "/contact-us", label: "Contact Us" },
+  { href: "/pricing", label: "Pricing", event: "view_pricing_click" },
+  { href: "/contact-us", label: "Contact Us", event: "contact_click" },
 ];
 
 export default function Header() {
@@ -52,6 +53,7 @@ export default function Header() {
                 <Link
                   key={link.href}
                   href={link.href}
+                  onClick={link.event ? () => trackEvent(link.event, { location: "header" }) : undefined}
                   className={`text-sm font-semibold transition-colors ${
                     isActive
                       ? "text-ink"
@@ -65,7 +67,7 @@ export default function Header() {
           </nav>
 
           <div className="hidden lg:block">
-            <BookWalkthroughButton className="rounded-lg bg-ink px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-slate" />
+            <BookWalkthroughButton location="header" className="rounded-lg bg-ink px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-slate" />
           </div>
 
           {/* Mobile toggle */}
@@ -98,6 +100,7 @@ export default function Header() {
               <Link
                 key={link.href}
                 href={link.href}
+                onClick={link.event ? () => trackEvent(link.event, { location: "header_mobile" }) : undefined}
                 className={`rounded-lg px-3 py-3 text-base font-semibold ${
                   isActive ? "bg-blue-light text-blue" : "text-ink"
                 }`}
@@ -120,6 +123,7 @@ export default function Header() {
             Terms &amp; conditions
           </Link>
           <BookWalkthroughButton
+            location="header_mobile"
             onClick={() => setMenuOpen(false)}
             className="mt-4 rounded-lg bg-ink px-5 py-3 text-center text-base font-semibold text-white"
           />

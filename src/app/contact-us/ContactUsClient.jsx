@@ -8,6 +8,7 @@ import { TextField } from "@mui/material";
 import LinkedinIcon from "@/components/icons/LinkedinIcon";
 import { countryCodes } from "../components/countryCodeList.js";
 import { LINKEDIN } from "@/lib/seo-config";
+import { trackEvent } from "@/lib/analytics";
 
 const PLAN_INTRO = {
   enterprise: "I'm interested in the Enterprise plan and would like to discuss pricing and requirements for my team.\n\n",
@@ -42,6 +43,13 @@ export default function ContactUsClient() {
     // eslint-disable-next-line react-hooks/set-state-in-effect
     setMenuPortalTarget(document.body);
   }, []);
+
+  // Fire once when Formspree confirms the submission succeeded.
+  useEffect(() => {
+    if (state.succeeded) {
+      trackEvent("generate_lead", { form_type: "contact_form", plan: plan || "none" });
+    }
+  }, [state.succeeded, plan]);
 
   // Update fullPhone whenever country code or phone changes
   useEffect(() => {

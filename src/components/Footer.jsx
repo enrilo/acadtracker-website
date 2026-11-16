@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import TrackedLink from "@/components/TrackedLink";
 import LinkedinIcon from "@/components/icons/LinkedinIcon";
 import { PARENT_COMPANY, LINKEDIN } from "@/lib/seo-config";
 import enriloTechLogo from "@/assets/images/company-logo/no-tagline/transparent-bg/enrilo-technologies-logo-1320x320-cropped.png";
@@ -9,12 +10,12 @@ const COLUMNS = [
     heading: "Product",
     links: [
       { href: "/features", label: "Features" },
-      { href: "/pricing", label: "Pricing" },
+      { href: "/pricing", label: "Pricing", event: "view_pricing_click" },
     ],
   },
   {
     heading: "Company",
-    links: [{ href: "/contact-us", label: "Contact Us" }],
+    links: [{ href: "/contact-us", label: "Contact Us", event: "contact_click" }],
   },
   {
     heading: "Legal",
@@ -79,12 +80,23 @@ export default function Footer() {
               <ul className="space-y-2.5">
                 {col.links.map((link) => (
                   <li key={link.href}>
-                    <Link
-                      href={link.href}
-                      className="text-sm text-slate-300 transition-colors hover:text-white"
-                    >
-                      {link.label}
-                    </Link>
+                    {link.event ? (
+                      <TrackedLink
+                        href={link.href}
+                        event={link.event}
+                        eventParams={{ location: "footer" }}
+                        className="text-sm text-slate-300 transition-colors hover:text-white"
+                      >
+                        {link.label}
+                      </TrackedLink>
+                    ) : (
+                      <Link
+                        href={link.href}
+                        className="text-sm text-slate-300 transition-colors hover:text-white"
+                      >
+                        {link.label}
+                      </Link>
+                    )}
                   </li>
                 ))}
               </ul>

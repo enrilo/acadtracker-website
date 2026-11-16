@@ -2,6 +2,7 @@ import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import CookieConsent from "@/components/CookieConsent";
+import Analytics from "@/components/Analytics";
 import BookingProvider from "@/components/booking/BookingProvider";
 import favicon from "@/assets/images/svg/a-logo-transparent.svg";
 import { planOffers } from "@/lib/plans";
@@ -157,6 +158,7 @@ export default function RootLayout({ children }) {
           <Footer />
           <CookieConsent />
         </BookingProvider>
+        <Analytics />
       </body>
     </html>
   );

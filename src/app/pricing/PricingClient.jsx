@@ -3,6 +3,7 @@ import { useState } from "react";
 import Link from "next/link";
 import { Check } from "lucide-react";
 import { PLANS, CORE_FEATURES, addOnsForPlan } from "@/lib/plans";
+import { trackEvent } from "@/lib/analytics";
 
 export default function PricingClient() {
   const [billing, setBilling] = useState("monthly");
@@ -128,7 +129,7 @@ function PlanColumn({ plan, billing }) {
       </div>
 
       {/* CTA */}
-      <Link href={`/contact-us?plan=${id}`} className={`mt-6 block w-full cursor-pointer rounded-lg py-3 text-center font-semibold transition ${
+      <Link href={`/contact-us?plan=${id}`} onClick={() => trackEvent("plan_cta_click", { plan: id, cta: price ? "get_started" : "contact_sales", billing })} className={`mt-6 block w-full cursor-pointer rounded-lg py-3 text-center font-semibold transition ${
         featured
           ? "bg-blue text-white hover:bg-blue-dark"
           : price

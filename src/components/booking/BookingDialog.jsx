@@ -6,6 +6,7 @@ import { ArrowLeft, CalendarDays, CircleCheck, Clock, Globe, Video, X } from "lu
 import BookingCalendar from "./BookingCalendar";
 import { BOOKING_EVENT, SLOT_MS, formatDateKeyLong, formatTimeLabel, formatWhenLabel, istDateKey, istParts } from "@/lib/booking/slots";
 import { EMAIL_ERROR, EMAIL_MAX, isValidEmail } from "@/lib/booking/validation";
+import { trackEvent } from "@/lib/analytics";
 
 const IST_OFFSET = -330; // Date#getTimezoneOffset() value for IST
 const EMPTY_FORM = { name: "", email: "", message: "", website: "" };
@@ -191,6 +192,7 @@ export default function BookingDialog({ open, onClose, onBooked }) {
       }
       setResult({ ...data, email: form.email.trim() });
       setStep("done");
+      trackEvent("generate_lead", { form_type: "walkthrough_booking" });
       onBooked?.();
     } catch {
       setSubmitError("Could not reach the server. Check your connection and try again.");
